@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\nbody, html {\n  overflow-x: hidden;\n   height: 100%;\n   margin: 0;\n}\n.article-code {\n\tbackground-color: #104e65;\n\tcolor: #e5e5e5;\n}\n"
 
 /***/ }),
 

@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".page-header {\r\n  background-image: url(\"/assets/img/page-header.jpg\");\r\n  height: 300%; \r\n  background-position: center;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  text-align: left;\r\n  color: white;\r\n  -webkit-background-size: cover;\r\n  -moz-background-size: cover;\r\n  -o-background-size: cover;\r\n}\r\n.main-content {\r\n\tmargin-top: 150px;\r\n\tpadding-top: 50px;\r\n\theight: auto; \r\n    background: rgba(21, 101, 132, 0.8)\r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n  <body id=\"page-top\">\n\n    <!-- Navigation -->\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\n      <div class=\"container\">\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          Menu\n          <i class=\"fa fa-bars\"></i>\n        </button>\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\n            <li class=\"nav-item\">\n              <a class=\"nav-link js-scroll-trigger\" href=\"#home\">Home</a>\n            </li>\n            <li class=\"nav-item\">\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </nav>\n\n    <!-- Home = Main Content -->\n    <section class=\"page-header\" id=\"home\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-12 main-content\">Welcome !!</div>          \n        </div>        \n      </div>\n    </section>\n\n    <!-- About me -->\n    <section id=\"about\" class=\"about-me\">\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n            <div class=\"col-md-4 offset-md-2\">\n            <ul class=\"list-inline social-buttons\">\n              <li class=\"list-inline-item\">\n                <a href=\"#\">\n                  <i class=\"fa fa-twitter\"></i>\n                </a>\n              </li>\n              <li class=\"list-inline-item\">\n                <a href=\"#\">\n                  <i class=\"fa fa-facebook\"></i>\n                </a>\n              </li>\n              <li class=\"list-inline-item\">\n                <a href=\"#\">\n                  <i class=\"fa fa-linkedin\"></i>\n                </a>\n              </li>\n            </ul>\n          </div>    \n          </div>\n        </div>\n      </div>\n    </section>\n</body>"
+module.exports = "\r\n  <body id=\"page-top\">\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\r\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          Menu\r\n          <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#home\">Home</a>\r\n            </li>\r\n           <!--  <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\r\n            </li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n\r\n    <!-- Home = Main Content -->\r\n    <section class=\"page-header\" id=\"home\">\r\n      <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-9 main-content\">\r\n            <ul >\r\n                <li *ngIf=\"articleOne\">\r\n                    <app-article [data]=\"articleOne\"></app-article>\r\n                    <app-article-content1></app-article-content1>\r\n                </li>\r\n            </ul>   \r\n          </div>  \r\n          <div class=\"col-lg-3 profile-info\">\r\n\t\t      <div class=\"card card-profile\">\r\n\t\t        <div class=\"card-header\"></div>\r\n\t\t        <div class=\"card-body text-xs-center\">\r\n\t\t          <img class=\"card-profile-img\" src=\"../assets/img/profile-pic.jpg\">\r\n\t\t          <h5 class=\"card-title\">Writer</h5>\r\n\t\t          <p class=\"mb-4\">Piyumi Kaushalya.</p>\r\n\t\t          <ul class=\"list-inline social-buttons\">\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-twitter\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-facebook\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-linkedin\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t            </ul><!-- \r\n\t\t          <button class=\"btn btn-outline-primary btn-sm\">\r\n\t\t            <span class=\"icon icon-add-user\"></span> Follow\r\n\t\t          </button> -->\r\n\t\t        </div>\r\n\t\t      </div>\r\n\t\t    </div>              \r\n        </div>        \r\n      </div>\r\n    </section>\r\n\r\n</body>"
 
 /***/ }),
 
@@ -70,6 +70,7 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
     AppComponent.prototype.ngOnInit = function () {
+        this.articleOne = { "title": "Jersey 2 REST web service Hello World Appication." };
     };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -99,6 +100,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _article_article_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./article/article.component */ "./src/app/article/article.component.ts");
+/* harmony import */ var _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./article-content1/article-content1.component */ "./src/app/article-content1/article-content1.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -108,13 +111,17 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
+                _article_article_component__WEBPACK_IMPORTED_MODULE_3__["ArticleComponent"],
+                _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_4__["ArticleContent1Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
@@ -123,6 +130,138 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article-content1/article-content1.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/article-content1/article-content1.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/article-content1/article-content1.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content1/article-content1.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"article-content\">\n  <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n          \tRequirements :\n          \t<ul>          \t\n          \t\t<li>JDK 1.8</li>\n          \t\t<li>Eclipse IDE</li>\n          \t\t<li>Apache tomcat server 7</li>\n          \t\t<li>Maven</li>\n          \t</ul>\n          \t<div>\n          \t\t<h4>Step 01 : </h4>\n          \t\t<p>Create a dynamic web project using eclipse IDE.</p>\n          \t\t<img class=\"col-lg-6\" src=\"/assets/img/articles/create-web-project.png\" \n          \t\talt=\"Create Dynamic Web Project\" >\n          \t\t\n          \t\t<h4>Step 02 : </h4>\n          \t\t<p>Then convert the created project into maven project. It will create the POM.xml \n          \t\t    inside the project root directory. \n\t\t\t\t\tFollowing maven dependencies should be added to POM.xml to use the jersey. \n          \t\t</p>\n          \t\t<pre class=\"article-code\"><code >\n        \t\t&lt;dependencies&gt;\n\t\t\t        &lt;dependency&gt;\n\t\t\t            &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;\n\t\t\t            &lt;artifactId&gt;jersey-server&lt;/artifactId&gt;\n\t\t\t            &lt;version&gt;2.20&lt;/version&gt;\n\t\t\t        &lt;/dependency&gt;\n\t\t\t\n\t\t\t        &lt;dependency&gt;\n\t\t\t            &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;\n\t\t\t            &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;\n\t\t\t            &lt;version&gt;2.20&lt;/version&gt;\n\t\t\t        &lt;/dependency&gt;\n\t\t\t    &lt;/dependencies&gt;\n          \t\t</code></pre>\n          \t\t\n          \t\t<p>Cont..</p>\n          \t</div>\n          \t\n          \n          </div>\n        </div>\n   </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/article-content1/article-content1.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/article-content1/article-content1.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ArticleContent1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent1Component", function() { return ArticleContent1Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent1Component = /** @class */ (function () {
+    function ArticleContent1Component() {
+    }
+    ArticleContent1Component.prototype.ngOnInit = function () {
+    };
+    ArticleContent1Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content1',
+            template: __webpack_require__(/*! ./article-content1.component.html */ "./src/app/article-content1/article-content1.component.html"),
+            styles: [__webpack_require__(/*! ./article-content1.component.css */ "./src/app/article-content1/article-content1.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent1Component);
+    return ArticleContent1Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article/article.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/article/article.component.css ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".article-title {\r\n\tcolor: black;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/article/article.component.html":
+/*!************************************************!*\
+  !*** ./src/app/article/article.component.html ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div>\n  <h3 *ngIf=\"data\" class=\"article-title\" >\n  \t{{data.title}}\n  </h3>  \n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/article/article.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/article/article.component.ts ***!
+  \**********************************************/
+/*! exports provided: ArticleComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleComponent", function() { return ArticleComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleComponent = /** @class */ (function () {
+    function ArticleComponent() {
+    }
+    ArticleComponent.prototype.ngOnInit = function () {
+    };
+    ArticleComponent.prototype.ngOnChanges = function (changes) {
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ArticleComponent.prototype, "data", void 0);
+    ArticleComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article',
+            template: __webpack_require__(/*! ./article.component.html */ "./src/app/article/article.component.html"),
+            styles: [__webpack_require__(/*! ./article.component.css */ "./src/app/article/article.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleComponent);
+    return ArticleComponent;
 }());
 
 
