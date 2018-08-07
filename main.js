@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-header {\r\n  background-image: url(\"/assets/img/page-header.jpg\");\r\n  background-repeat: repeat-y;\r\n  text-align: left;\r\n  color: white;\r\n  -webkit-background-size: cover;\r\n  -moz-background-size: cover;\r\n  -o-background-size: cover;\r\n}\r\n.main-content {\r\n\tmargin-top: 150px;\r\n\tpadding-top: 50px;\r\n\theight: auto; \r\n    background: rgba(21, 101, 132, 0.8)\r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}"
+module.exports = ".page-header {\r\n  background-image: url(\"/assets/img/page-header.jpg\");\r\n  background-repeat: repeat-y;\r\n  text-align: left;\r\n  color: white;\r\n  -webkit-background-size: cover;\r\n  -moz-background-size: cover;\r\n  -o-background-size: cover;\r\n}\r\n.main-content {\r\n\tmargin-top: 150px;\r\n\tpadding-top: 50px;\r\n\theight: auto; \r\n    background: rgba(21, 101, 132, 0.8)\r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}\r\n.list-group a{\r\n\tcolor: white;\r\n}\r\n.list-group a:hover {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.list-group a:active {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = ".page-header {\r\n  background-image: url(\"/assets/img/page-h
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n  <body id=\"page-top\">\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\r\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          Menu\r\n          <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#home\">Home</a>\r\n            </li>\r\n           <!--  <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\r\n            </li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n\r\n    <!-- Home = Main Content -->\r\n    <section class=\"page-header\" id=\"home\">\r\n      <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-9 main-content\">\r\n            <ul >\r\n                <li *ngIf=\"articleOne\">\r\n                    <app-article [data]=\"articleOne\"></app-article>\r\n                    <app-article-content1></app-article-content1>\r\n                </li>\r\n            </ul>   \r\n          </div>  \r\n          <div class=\"col-lg-3 profile-info\">\r\n\t\t      <div class=\"card card-profile\">\r\n\t\t        <div class=\"card-header\"></div>\r\n\t\t        <div class=\"card-body text-xs-center\">\r\n\t\t          <img class=\"card-profile-img\" src=\"../assets/img/profile-pic.jpg\">\r\n\t\t          <h5 class=\"card-title\">Writer</h5>\r\n\t\t          <p class=\"mb-4\">Piyumi Kaushalya.</p>\r\n\t\t          <ul class=\"list-inline social-buttons\">\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-twitter\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-facebook\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-linkedin\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t            </ul><!-- \r\n\t\t          <button class=\"btn btn-outline-primary btn-sm\">\r\n\t\t            <span class=\"icon icon-add-user\"></span> Follow\r\n\t\t          </button> -->\r\n\t\t        </div>\r\n\t\t      </div>\r\n\t\t    </div>              \r\n        </div>        \r\n      </div>\r\n    </section>\r\n\r\n</body>"
+module.exports = "\r\n  <body id=\"page-top\">\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\r\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n          Menu\r\n          <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#home\">Home</a>\r\n            </li>\r\n           <!--  <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\r\n            </li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n\r\n    <!-- Home = Main Content -->\r\n    <section class=\"page-header\" id=\"home\">\r\n      <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-9 main-content\">          \t\r\n          \t<router-outlet></router-outlet>\r\n          </div>  \r\n          <div class=\"col-lg-3 profile-info\">\r\n\t\t      <div class=\"card card-profile\">\r\n\t\t        <div class=\"card-header\"></div>\r\n\t\t        <div class=\"card-body text-xs-center\">\r\n\t\t          <img class=\"card-profile-img\" src=\"../assets/img/profile-pic.jpg\">\r\n\t\t          <h5 class=\"card-title\">Writer</h5>\r\n\t\t          <p class=\"mb-4\">Piyumi Kaushalya.</p>\r\n\t\t          <ul class=\"list-inline social-buttons\">\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-twitter\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-facebook\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fa fa-linkedin\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t            </ul><!-- \r\n\t\t          <button class=\"btn btn-outline-primary btn-sm\">\r\n\t\t            <span class=\"icon icon-add-user\"></span> Follow\r\n\t\t          </button> -->\r\n\t\t        </div>\r\n\t\t      </div>\r\n\t\t      <div class=\"card card-profile\">\t\r\n\t\t      \t<div class=\"card-body card-profile\">\r\n\t\t      \t\t<ul class=\"list-group\">\r\n\t\t\t\t\t  <a routerLink = \"jersey_example\" >Jersey REST Example</a>\r\n\t\t\t\t\t  <a routerLink = \"test_example\" >Test Example</a>\r\n\t\t\t\t\t</ul>\r\n\t\t      \t</div>\t\t      \t\t      \t\r\n\t\t      </div>\r\n\t\t    </div>              \r\n        </div>       \r\n      </div>\r\n    </section>\r\n    \r\n\r\n</body>"
 
 /***/ }),
 
@@ -70,7 +70,6 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
     AppComponent.prototype.ngOnInit = function () {
-        this.articleOne = { "title": "Jersey 2 REST web service Hello World Appication." };
     };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -99,9 +98,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _article_article_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./article/article.component */ "./src/app/article/article.component.ts");
-/* harmony import */ var _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./article-content1/article-content1.component */ "./src/app/article-content1/article-content1.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _article_article_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./article/article.component */ "./src/app/article/article.component.ts");
+/* harmony import */ var _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./article-content1/article-content1.component */ "./src/app/article-content1/article-content1.component.ts");
+/* harmony import */ var _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./article-content2/article-content2.component */ "./src/app/article-content2/article-content2.component.ts");
+/* harmony import */ var _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./send-email/send-email.component */ "./src/app/send-email/send-email.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -113,20 +115,35 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _article_article_component__WEBPACK_IMPORTED_MODULE_3__["ArticleComponent"],
-                _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_4__["ArticleContent1Component"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _article_article_component__WEBPACK_IMPORTED_MODULE_4__["ArticleComponent"],
+                _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_5__["ArticleContent1Component"],
+                _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__["ArticleContent2Component"],
+                _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__["SendEmailComponent"]
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
+                    {
+                        path: 'jersey_example',
+                        component: _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_5__["ArticleContent1Component"]
+                    },
+                    {
+                        path: 'test_example',
+                        component: _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__["ArticleContent2Component"]
+                    }
+                ])
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -154,7 +171,7 @@ module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\n  <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n          \tRequirements :\n          \t<ul>          \t\n          \t\t<li>JDK 1.8</li>\n          \t\t<li>Eclipse IDE</li>\n          \t\t<li>Apache tomcat server 7</li>\n          \t\t<li>Maven</li>\n          \t</ul>\n          \t<div>\n          \t\n          \t\t<h4>Step 01 : </h4>\n          \t\t<p>Create a dynamic web project using eclipse IDE.</p>\n          \t\t<img class=\"col-lg-6\" src=\"/assets/img/articles/create-web-project.png\" \n          \t\talt=\"Create Dynamic Web Project\" >\n          \t\t\n          \t\t<h4>Step 02 : </h4>\n          \t\t<p>Then convert the created project into maven project. It will create the POM.xml \n          \t\t    inside the project root directory. \n\t\t\t\t\tFollowing maven dependencies should be added to POM.xml to use the jersey. \n          \t\t</p>\n          \t\t<pre class=\"article-code\"><code >\n     &lt;dependencies&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;\n            &lt;artifactId&gt;jersey-server&lt;/artifactId&gt;\n            &lt;version&gt;2.20&lt;/version&gt;\n        &lt;/dependency&gt;\n\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;\n            &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;\n            &lt;version&gt;2.20&lt;/version&gt;\n        &lt;/dependency&gt;\n    &lt;/dependencies&gt;</code></pre>\n    \n          \t\t<h4>Step 03 : </h4>\n          \t\t<p>Create the service class with REST service methods</p>\n          \t\t<pre class=\"article-code\"><code>\n       \t\timport javax.ws.rs.GET;\n\t\timport javax.ws.rs.Path;\n\t\timport javax.ws.rs.PathParam;\n\t\timport javax.ws.rs.core.Response;\n\t\t\n\t\t@Path(\"/sayhello\")\n\t\tpublic class HelloWorldService {{ '{' }}\n\t\t\n\t\t    @GET\n\t\t    @Path(\"/{{ '{' }}name{{ '}' }}\")\n\t\t    public Response sayHello(@PathParam(\"name\") String msg) {{ '{' }}\n\t\t        String output = \"Hello, \" + msg + \"!\";\n\t\t        return Response.status(200).entity(output).build();\n\t\t    {{ '}' }}\t\t\t\t\t\t    \n\t\t{{ '}' }}\t\t\t\t\t          \t\t\t\t\n          \t\t</code></pre>\n          \t\t<h4>Step 04 : </h4>\n          \t\t<p>Specify the package which reside the service classes implementing\n          \t\t jersey ResourceConfig class </p>\n          \t\t <pre class=\"article-code\">\n          \t\t \t<code>\n    import org.glassfish.jersey.server.ResourceConfig;\n\n\tpublic class HelloWorldApplication extends ResourceConfig {{ '{' }}\n\t    public HelloWorldApplication() {{ '{' }}\n\t        packages(\"com.example.services\");\n\t    {{ '}' }}\n\t{{ '}' }}\t    \n          \t\t \t</code>\n          \t\t </pre>\n          \t\t \n          \t\t <h4>Step 05 : </h4>\n          \t\t <p>If the project does not have a web.xml file create as below.</p>\n          \t\t <pre class=\"article-code\"><code>\n\t&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n\t&lt;web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \n\txmlns=\"http://java.sun.com/xml/ns/javaee\" \n\txsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee \n\thttp://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" \n\tversion=\"3.0\"&gt;\n\t\t  &lt;display-name&gt;Web Service Demo&lt;/display-name&gt;\n\t\t    &lt;servlet&gt;\n\t\t        &lt;servlet-name&gt;WebServiceDemo&lt;/servlet-name&gt;\n\t\t        &lt;servlet-class&gt;org.glassfish.jersey.servlet.ServletContainer\n\t\t        &lt;/servlet-class&gt;\n\t\t        &lt;init-param&gt;\n\t\t            &lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;\n\t\t            &lt;param-value&gt;com.example.app.HelloWorldApplication&lt;/param-value&gt;\n\t\t\t     &lt;{{ '!' }} --ResourceConfig class implementation --&gt;\n\t\t        &lt;/init-param&gt;\n\t\t        &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;\n\t\t    &lt;/servlet&gt;\n\t\t    &lt;servlet-mapping&gt;\n\t\t        &lt;servlet-name&gt; WebServiceDemo &lt;/servlet-name&gt;\n\t\t        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;\n\t\t    &lt;/servlet-mapping&gt;\n\t&lt;/web-app&gt;          \t\t \n          \t\t </code></pre>\n          \t\t \n          \t\t <h4>Step 06 : </h4>\n          \t\t <p>Create the war file using maven and run on tomcat web container. Use a browser and enter the \n          \t\t URL as follows to see the response.</p>\n          \t\t <img class=\"col-lg-6\" src=\"/assets/img/articles/client-browser.png\" \n          \t\talt=\"Create Dynamic Web Project\" width=\"100%\" >\n          \t</div><!-- \n          \t<div class=\"row\">\n          \t\t<button (click)=\"sendMail()\" >Send</button>\n          \t</div>    -->       \t\n          </div>\n        </div>\n   </div>\n</div>\n"
+module.exports = "<app-article [data]=\"articleOne\"></app-article>\n<div class=\"article-content\">\n  <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n          \tRequirements :\n          \t<ul>          \t\n          \t\t<li>JDK 1.8</li>\n          \t\t<li>Eclipse IDE</li>\n          \t\t<li>Apache tomcat server 7</li>\n          \t\t<li>Maven</li>\n          \t</ul>\n          \t<div>\n          \t\n          \t\t<h4>Step 01 : </h4>\n          \t\t<p>Create a dynamic web project using eclipse IDE.</p>\n          \t\t<img class=\"col-lg-6\" src=\"/assets/img/articles/create-web-project.png\" \n          \t\talt=\"Create Dynamic Web Project\" >\n          \t\t\n          \t\t<h4>Step 02 : </h4>\n          \t\t<p>Then convert the created project into maven project. It will create the POM.xml \n          \t\t    inside the project root directory. \n\t\t\t\t\tFollowing maven dependencies should be added to POM.xml to use the jersey. \n          \t\t</p>\n          \t\t<pre class=\"article-code\"><code >\n     &lt;dependencies&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;\n            &lt;artifactId&gt;jersey-server&lt;/artifactId&gt;\n            &lt;version&gt;2.20&lt;/version&gt;\n        &lt;/dependency&gt;\n\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;\n            &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;\n            &lt;version&gt;2.20&lt;/version&gt;\n        &lt;/dependency&gt;\n    &lt;/dependencies&gt;</code></pre>\n    \n          \t\t<h4>Step 03 : </h4>\n          \t\t<p>Create the service class with REST service methods</p>\n          \t\t<pre class=\"article-code\"><code>\n       \t\timport javax.ws.rs.GET;\n\t\timport javax.ws.rs.Path;\n\t\timport javax.ws.rs.PathParam;\n\t\timport javax.ws.rs.core.Response;\n\t\t\n\t\t@Path(\"/sayhello\")\n\t\tpublic class HelloWorldService {{ '{' }}\n\t\t\n\t\t    @GET\n\t\t    @Path(\"/{{ '{' }}name{{ '}' }}\")\n\t\t    public Response sayHello(@PathParam(\"name\") String msg) {{ '{' }}\n\t\t        String output = \"Hello, \" + msg + \"!\";\n\t\t        return Response.status(200).entity(output).build();\n\t\t    {{ '}' }}\t\t\t\t\t\t    \n\t\t{{ '}' }}\t\t\t\t\t          \t\t\t\t\n          \t\t</code></pre>\n          \t\t<h4>Step 04 : </h4>\n          \t\t<p>Specify the package which reside the service classes implementing\n          \t\t jersey ResourceConfig class </p>\n          \t\t <pre class=\"article-code\">\n          \t\t \t<code>\n    import org.glassfish.jersey.server.ResourceConfig;\n\n\tpublic class HelloWorldApplication extends ResourceConfig {{ '{' }}\n\t    public HelloWorldApplication() {{ '{' }}\n\t        packages(\"com.example.services\");\n\t    {{ '}' }}\n\t{{ '}' }}\t    \n          \t\t \t</code>\n          \t\t </pre>\n          \t\t \n          \t\t <h4>Step 05 : </h4>\n          \t\t <p>If the project does not have a web.xml file create as below.</p>\n          \t\t <pre class=\"article-code\"><code>\n\t&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n\t&lt;web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \n\txmlns=\"http://java.sun.com/xml/ns/javaee\" \n\txsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee \n\thttp://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" \n\tversion=\"3.0\"&gt;\n\t\t  &lt;display-name&gt;Web Service Demo&lt;/display-name&gt;\n\t\t    &lt;servlet&gt;\n\t\t        &lt;servlet-name&gt;WebServiceDemo&lt;/servlet-name&gt;\n\t\t        &lt;servlet-class&gt;org.glassfish.jersey.servlet.ServletContainer\n\t\t        &lt;/servlet-class&gt;\n\t\t        &lt;init-param&gt;\n\t\t            &lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;\n\t\t            &lt;param-value&gt;com.example.app.HelloWorldApplication&lt;/param-value&gt;\n\t\t\t     &lt;{{ '!' }} --ResourceConfig class implementation --&gt;\n\t\t        &lt;/init-param&gt;\n\t\t        &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;\n\t\t    &lt;/servlet&gt;\n\t\t    &lt;servlet-mapping&gt;\n\t\t        &lt;servlet-name&gt; WebServiceDemo &lt;/servlet-name&gt;\n\t\t        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;\n\t\t    &lt;/servlet-mapping&gt;\n\t&lt;/web-app&gt;          \t\t \n          \t\t </code></pre>\n          \t\t \n          \t\t <h4>Step 06 : </h4>\n          \t\t <p>Create the war file using maven and run on tomcat web container. Use a browser and enter the \n          \t\t URL as follows to see the response.</p>\n          \t\t <img class=\"col-lg-6\" src=\"/assets/img/articles/client-browser.png\" \n          \t\talt=\"Create Dynamic Web Project\" width=\"100%\" >\n          \t</div>       \t\n          </div>\n        </div>\n   </div>\n   <app-send-email></app-send-email>\n</div>\n"
 
 /***/ }),
 
@@ -169,8 +186,6 @@ module.exports = "<div class=\"article-content\">\n  <div class=\"container\">\n
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent1Component", function() { return ArticleContent1Component; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var querystring__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! querystring */ "./node_modules/querystring/index.js");
-/* harmony import */ var querystring__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(querystring__WEBPACK_IMPORTED_MODULE_1__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -181,18 +196,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
 var ArticleContent1Component = /** @class */ (function () {
     function ArticleContent1Component() {
     }
     ArticleContent1Component.prototype.ngOnInit = function () {
-    };
-    ArticleContent1Component.prototype.sendMail = function () {
-        var link = "mailto:piyumi11@gmail.com";
-        "?cc=piyumi.rajapaksha@auxenta.com";
-        "&subject=" + Object(querystring__WEBPACK_IMPORTED_MODULE_1__["escape"])("This is my subject");
-        "&body=" + Object(querystring__WEBPACK_IMPORTED_MODULE_1__["escape"])("Test");
-        window.location.href = link;
+        this.articleOne = { "title": "Jersey 2 REST web service Hello World Application." };
     };
     ArticleContent1Component = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -203,6 +211,70 @@ var ArticleContent1Component = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ArticleContent1Component);
     return ArticleContent1Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article-content2/article-content2.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/article-content2/article-content2.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/article-content2/article-content2.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content2/article-content2.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleTwo\"></app-article>\n<p>\n  Test Example\n</p>\n<app-send-email></app-send-email>\n"
+
+/***/ }),
+
+/***/ "./src/app/article-content2/article-content2.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/article-content2/article-content2.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ArticleContent2Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent2Component", function() { return ArticleContent2Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent2Component = /** @class */ (function () {
+    function ArticleContent2Component() {
+    }
+    ArticleContent2Component.prototype.ngOnInit = function () {
+        this.articleTwo = { "title": "Test Example" };
+    };
+    ArticleContent2Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content2',
+            template: __webpack_require__(/*! ./article-content2.component.html */ "./src/app/article-content2/article-content2.component.html"),
+            styles: [__webpack_require__(/*! ./article-content2.component.css */ "./src/app/article-content2/article-content2.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent2Component);
+    return ArticleContent2Component;
 }());
 
 
@@ -272,6 +344,76 @@ var ArticleComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ArticleComponent);
     return ArticleComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/send-email/send-email.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/send-email/send-email.component.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".btn-feedback {\r\n\tbackground-color:#104e65;\r\n\tcolor: white;\r\n\tborder-color: #104e65;\r\n\tborder-radius: 4px;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/send-email/send-email.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/send-email/send-email.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container\">\n\t<div class=\"row card-body float-right\">\n\t\tWas this article helpful? &nbsp;&nbsp;\n\t\t<button type=\"button\" class=\"btn-feedback\" (click)=\"sendMail('Yes')\">Yes</button>&nbsp;\n \t\t<button type=\"button\" class=\"btn-feedback\" (click)=\"sendMail('No')\">No</button>\n\t</div>\t\n</div>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/send-email/send-email.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/send-email/send-email.component.ts ***!
+  \****************************************************/
+/*! exports provided: SendEmailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SendEmailComponent", function() { return SendEmailComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SendEmailComponent = /** @class */ (function () {
+    function SendEmailComponent() {
+    }
+    SendEmailComponent.prototype.ngOnInit = function () {
+    };
+    SendEmailComponent.prototype.sendMail = function (response) {
+        var link = 'mailto:piyumik11@gmail.com' +
+            '?cc=piyumi.rajapaksha@auxenta.com' +
+            '&subject=User Feedback on piyumi11.github.io' +
+            '&body=Was this article helpful?' + response;
+        window.location.href = link;
+    };
+    SendEmailComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-send-email',
+            template: __webpack_require__(/*! ./send-email.component.html */ "./src/app/send-email/send-email.component.html"),
+            styles: [__webpack_require__(/*! ./send-email.component.css */ "./src/app/send-email/send-email.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SendEmailComponent);
+    return SendEmailComponent;
 }());
 
 
