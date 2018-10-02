@@ -41,7 +41,7 @@ module.exports = ".page-header {\r\n  /* background-image: url(\"/assets/img/pag
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n  <body id=\"page-top\">\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\r\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" routerLink = \"home\">Home</a>\r\n            </li>\r\n           <!--  <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\r\n            </li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n\r\n    <!-- Home = Main Content -->\r\n    <section class=\"page-header\" id=\"home\">\r\n      <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-9 main-content\">          \t\r\n          \t<router-outlet></router-outlet>\r\n          </div>  \r\n          <div class=\"col-lg-3 profile-info\">\r\n\t\t      <div class=\"card card-profile\">\r\n\t\t        <div class=\"card-header\"></div>\r\n\t\t        <div class=\"card-body text-xs-center\">\r\n\t\t          <img class=\"card-profile-img\" src=\"../assets/img/profile-pic.jpg\">\r\n\t\t          <h5 class=\"card-title\">Writer</h5>\r\n\t\t          <p class=\"mb-4\">Piyumi Kaushalya.</p>\r\n\t\t          <a class=\"github-button\" href=\"https://github.com/piyumi11\" data-show-count=\"true\" data-size=\"large\">\r\n\t\t\t\t\tFollow\r\n\t\t\t\t  </a>\r\n\t\t          <ul class=\"list-inline social-buttons\">\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-twitter\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-facebook-f\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-linkedin-in\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\t         \r\n\t\t            </ul>\t\t            \r\n\t\t        </div>\r\n\t\t      </div>\r\n\t\t      <div class=\"card card-profile\">\t\r\n\t\t      \t<div class=\"card-body card-profile\">\r\n\t\t      \t\t<ul class=\"list-group\">\r\n\t\t\t\t\t  <a routerLink = \"jersey_example\" ><i class=\"fas fa-caret-right fa-xs\"></i> Jersey REST Example</a>\r\n\t\t\t\t\t  <a routerLink = \"spring_mvc_boot\" ><i class=\"fas fa-caret-right fa-xs\"></i> Spring : MVC & Boot</a>\r\n\t\t\t\t\t</ul>\r\n\t\t      \t</div>\t\t      \t\t      \t\r\n\t\t      </div>\r\n\t\t    </div>              \r\n        </div>       \r\n      </div>\r\n    </section>\r\n    \r\n\r\n</body>"
+module.exports = "\r\n  <body id=\"page-top\">\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\r\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" routerLink = \"home\">Home</a>\r\n            </li>\r\n           <!--  <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\r\n            </li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n\r\n    <!-- Home = Main Content -->\r\n    <section class=\"page-header\" id=\"home\">\r\n      <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-9 main-content\">          \t\r\n          \t<router-outlet></router-outlet>\r\n          </div>  \r\n          <div class=\"col-lg-3 profile-info\">\r\n\t\t      <div class=\"card card-profile\">\r\n\t\t        <div class=\"card-header\"></div>\r\n\t\t        <div class=\"card-body text-xs-center\">\r\n\t\t          <img class=\"card-profile-img\" src=\"../assets/img/profile-pic.jpg\">\r\n\t\t          <h5 class=\"card-title\">Writer</h5>\r\n\t\t          <p class=\"mb-4\">Piyumi Kaushalya.</p>\r\n\t\t          <a class=\"github-button\" href=\"https://github.com/piyumi11\" data-show-count=\"true\" data-size=\"large\">\r\n\t\t\t\t\tFollow\r\n\t\t\t\t  </a>\r\n\t\t          <ul class=\"list-inline social-buttons\">\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-twitter\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-facebook-f\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-linkedin-in\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\t         \r\n\t\t            </ul>\t\t            \r\n\t\t        </div>\r\n\t\t      </div>\r\n\t\t      <div class=\"card card-profile\">\t\r\n\t\t      \t<div class=\"card-body card-profile\">\r\n\t\t      \t\t<ul class=\"list-group\">\r\n\t\t\t\t\t  <a routerLink = \"jersey_example\" ><i class=\"fas fa-caret-right fa-xs\"></i> Jersey REST Example</a>\r\n\t\t\t\t\t  <a routerLink = \"spring_mvc_boot\" ><i class=\"fas fa-caret-right fa-xs\"></i> Spring : MVC & Boot</a>\r\n\t\t\t\t\t  <a routerLink = \"introduction_to_docker\" ><i class=\"fas fa-caret-right fa-xs\"></i> Introduction to Docker</a>\r\n\t\t\t\t\t</ul>\r\n\t\t      \t</div>\t\t      \t\t      \t\r\n\t\t      </div>\r\n\t\t    </div>              \r\n        </div>       \r\n      </div>\r\n    </section>\r\n    \r\n\r\n</body>"
 
 /***/ }),
 
@@ -105,12 +105,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./article-content2/article-content2.component */ "./src/app/article-content2/article-content2.component.ts");
 /* harmony import */ var _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./send-email/send-email.component */ "./src/app/send-email/send-email.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./article-content3/article-content3.component */ "./src/app/article-content3/article-content3.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -131,11 +133,16 @@ var AppModule = /** @class */ (function () {
                 _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_5__["ArticleContent1Component"],
                 _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__["ArticleContent2Component"],
                 _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__["SendEmailComponent"],
-                _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"]
+                _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
+                _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__["ArticleContent3Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot([
+                    {
+                        path: 'introduction_to_docker',
+                        component: _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__["ArticleContent3Component"]
+                    },
                     {
                         path: 'jersey_example',
                         component: _article_content1_article_content1_component__WEBPACK_IMPORTED_MODULE_5__["ArticleContent1Component"]
@@ -288,6 +295,71 @@ var ArticleContent2Component = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ArticleContent2Component);
     return ArticleContent2Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article-content3/article-content3.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/article-content3/article-content3.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/article-content3/article-content3.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content3/article-content3.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleThree\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n     <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h5>What are the containers?</h5>\r\n       \t\t<p>An isolated virtualized operating system which contains application and its dependencies. </p>\r\n       </div>\r\n    </div>\r\n    <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h5>Why we use containers?</h5>\r\n       \t\t<p>Containers are a portable unit, we can deploy, run and test in any platform without considering \r\n       \t\tthe host machine/ server software and hardware configurations. \r\n\t\t\tContainers allow to specify the memory, CPU, and disk space need to use from the host. Multiple \r\n\t\t\tapplications can deploy on one instance using containers. \r\n\t\t\tContainers are independent of other container services, so developers can independently update \r\n\t\t\tcontainers without conflicts.  Containers also allow to track versions of the application and has \r\n\t\t\tthe facility to roll back the deployments. \r\n\t\t\t</p>\r\n       </div>\r\n    </div>   \r\n    <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h5>What is Docker?</h5>\r\n       \t\t<p>A lightweight container technology which can use with Linux, Windows, Cloud, Serverless environment. \r\n       \t\tMore focus on developer and system operator requirements to separate the application dependencies from \r\n       \t\tthe infrastructure. \r\n\t\t\t</p>\r\n\t\t\t<p>References : <a href=\"https://www.docker.com\" target=\"_blank\"> https://www.docker.com </a> </p>\r\n       </div>\r\n    </div>    \r\n  </div>\r\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/article-content3/article-content3.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/article-content3/article-content3.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ArticleContent3Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent3Component", function() { return ArticleContent3Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent3Component = /** @class */ (function () {
+    function ArticleContent3Component() {
+    }
+    ArticleContent3Component.prototype.ngOnInit = function () {
+        this.articleThree = { 'title': 'Introduction to Containerization and Docker',
+            'lastUpdated': 'October 02 2018' };
+    };
+    ArticleContent3Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content3',
+            template: __webpack_require__(/*! ./article-content3.component.html */ "./src/app/article-content3/article-content3.component.html"),
+            styles: [__webpack_require__(/*! ./article-content3.component.css */ "./src/app/article-content3/article-content3.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent3Component);
+    return ArticleContent3Component;
 }());
 
 
