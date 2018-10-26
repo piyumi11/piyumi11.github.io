@@ -442,7 +442,7 @@ var ArticleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ""
+module.exports = ".card-home {\r\n\tbackground-color:#104e65;\t\r\n}\r\n.card-border-home {\t\r\n\tborder: 0px;\r\n}\r\n.card-font-home a{\r\n\tcolor:white;\r\n}\r\n"
 
 /***/ }),
 
@@ -453,7 +453,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\n  <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-lg-8 offset-lg-1\">\n        \t\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div class=\"article-content\">\n  <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-lg-8 offset-lg-1\">\n        \t<div class=\"card-deck\">\n\t\t\t  <div class=\"card card-border-home\">\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\n\t\t\t    <div class=\"card-body card-home\">\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example</a></p>\n\t\t\t    </div>\n\t\t\t  </div>\n\t\t\t  <div class=\"card card-border-home\">\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\n\t\t\t    <div class=\"card-body card-home\">\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Introduction to Spring MVC & Spring Boot</a></p>\n\t\t\t    </div>\n\t\t\t  </div>\n\t\t\t  <div class=\"card card-border-home\">\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\n\t\t\t    <div class=\"card-body card-home\">\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Introduction to Containerization and Docker </a></p>\n\t\t\t    </div>\n\t\t\t  </div>\n\t\t\t</div>\n        </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
