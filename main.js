@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".page-header {\r\n  /* background-image: url(\"/assets/img/page-header.jpg\"); */\r\n  /* background-repeat: repeat-y; */\r\n  background-color:#104e65;\r\n  text-align: left;\r\n  color: white;\r\n  -webkit-background-size: cover;\r\n  -moz-background-size: cover;\r\n  -o-background-size: cover;\r\n}\r\n.main-content {\r\n\tmargin-top: 150px;\r\n\tpadding-top: 50px;\r\n\theight: auto; \r\n    background: rgba(21, 101, 132, 0.8)\r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}\r\n.list-group a{\r\n\tcolor: white;\r\n}\r\n.list-group a:hover {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.list-group a:active {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.social-buttons a{\r\n\tcolor: black;\t\r\n}\r\n.social-buttons button, .github-button  {\r\n\tborder-color: black;\r\n\tbackground-color: #156584;\r\n\ttext-decoration: none;\r\n}"
+module.exports = ".main-content {\r\n\tpadding-top: 50px;\r\n\tpadding-left: 100px;\r\n\theight: auto; \r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}\r\n.list-group a{\r\n\tcolor: white;\r\n}\r\n.list-group a:hover {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.list-group a:active {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.icon-bar a{\r\n\tcolor: #5d5959;\r\n\tdisplay: block;\r\n  \ttext-align: center;\r\n  \tpadding-top:10px;\r\n}\r\n.icon-bar {\r\n\tpadding-top: 50px;\r\n}\r\n.social-buttons button, .github-button  {\r\n\tborder-color: black;\r\n\tbackground-color: #156584;\r\n\ttext-decoration: none;\r\n}\r\n"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = ".page-header {\r\n  /* background-image: url(\"/assets/img/pag
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n  <body id=\"page-top\">\r\n\r\n    <!-- Navigation -->\r\n    <nav class=\"navbar navbar-expand-lg navbar-dark fixed-top\" id=\"mainNav\">\r\n      <div class=\"container\">\r\n        <a class=\"navbar-brand js-scroll-trigger\" href=\"#page-top\">Piyumi Kaushalya</a>\r\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarResponsive\" aria-controls=\"navbarResponsive\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n            <i class=\"fa fa-bars\"></i>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse\" id=\"navbarResponsive\">\r\n          <ul class=\"navbar-nav text-uppercase ml-auto\">\r\n            <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" routerLink = \"home\">Home</a>\r\n            </li>\r\n           <!--  <li class=\"nav-item\">\r\n              <a class=\"nav-link js-scroll-trigger\" href=\"#about\">About Me</a>\r\n            </li> -->\r\n          </ul>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n\r\n    <!-- Home = Main Content -->\r\n    <section class=\"page-header\" id=\"home\">\r\n      <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-9 main-content\">          \t\r\n          \t<router-outlet></router-outlet>\r\n          </div>  \r\n          <div class=\"col-lg-3 profile-info\">\r\n\t\t      <div class=\"card card-profile\">\r\n\t\t        <div class=\"card-header\"></div>\r\n\t\t        <div class=\"card-body text-xs-center\">\r\n\t\t          <img class=\"card-profile-img\" src=\"../assets/img/profile-pic.jpg\">\r\n\t\t          <h5 class=\"card-title\">Writer</h5>\r\n\t\t          <p class=\"mb-4\">Piyumi Kaushalya.</p>\r\n\t\t          <a class=\"github-button\" href=\"https://github.com/piyumi11\" data-show-count=\"true\" data-size=\"large\">\r\n\t\t\t\t\tFollow\r\n\t\t\t\t  </a>\r\n\t\t          <ul class=\"list-inline social-buttons\">\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-twitter\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-facebook-f\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\r\n\t\t              <li class=\"list-inline-item\">\r\n\t\t                <a href=\"#\">\r\n\t\t                  <i class=\"fab fa-linkedin-in\"></i>\r\n\t\t                </a>\r\n\t\t              </li>\t         \r\n\t\t            </ul>\t\t            \r\n\t\t        </div>\r\n\t\t      </div>\r\n\t\t      <div class=\"card card-profile\">\t\r\n\t\t      \t<div class=\"card-body card-profile\">\r\n\t\t      \t\t<ul class=\"list-group\">\r\n\t\t\t\t\t  <a routerLink = \"jersey_example\" ><i class=\"fas fa-caret-right fa-xs\"></i> Jersey REST Example</a>\r\n\t\t\t\t\t  <a routerLink = \"spring_mvc_boot\" ><i class=\"fas fa-caret-right fa-xs\"></i> Spring : MVC & Boot</a>\r\n\t\t\t\t\t  <a routerLink = \"introduction_to_docker\" ><i class=\"fas fa-caret-right fa-xs\"></i> Introduction to Docker</a>\r\n\t\t\t\t\t</ul>\r\n\t\t      \t</div>\t\t      \t\t      \t\r\n\t\t      </div>\r\n\t\t    </div>              \r\n        </div>       \r\n      </div>\r\n    </section>\r\n    \r\n\r\n</body>"
+module.exports = "<div class=\"container-fluid\">\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-lg-11 main-content\">\r\n\t\t\t<router-outlet></router-outlet>\r\n\t\t</div>\r\n\t\t<div class=\"col-lg-1 icon-bar\">\r\n\t\t  <a routerLink=\"home\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Home Page\"><i class=\"fas fa-home\"></i></a> \r\n\t\t   <a href=\"https://github.com/piyumi11\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"github\">\r\n\t\t  \t<i class=\"fab fa-github-alt\"></i>\r\n\t\t  </a>\r\n\t\t  <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"twitter\"><i class=\"fab fa-twitter\"></i></a> \r\n\t\t  <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"facebook\"><i class=\"fab fa-facebook-f\"></i></a> \r\n\t\t  <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"linkedin\"><i class=\"fab fa-linkedin-in\"></i></a>\r\n\t\t  <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"instagram\"><i class=\"fab fa-instagram\"></i></a>\t\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -106,12 +106,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./send-email/send-email.component */ "./src/app/send-email/send-email.component.ts");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./article-content3/article-content3.component */ "./src/app/article-content3/article-content3.component.ts");
+/* harmony import */ var _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./article-content4/article-content4.component */ "./src/app/article-content4/article-content4.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -134,7 +136,8 @@ var AppModule = /** @class */ (function () {
                 _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__["ArticleContent2Component"],
                 _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__["SendEmailComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
-                _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__["ArticleContent3Component"]
+                _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__["ArticleContent3Component"],
+                _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__["ArticleContent4Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -150,6 +153,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: 'spring_mvc_boot',
                         component: _article_content2_article_content2_component__WEBPACK_IMPORTED_MODULE_6__["ArticleContent2Component"]
+                    },
+                    {
+                        path: 'lamp_and_codeigniter',
+                        component: _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__["ArticleContent4Component"]
                     },
                     {
                         path: '',
@@ -178,7 +185,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
+module.exports = ""
 
 /***/ }),
 
@@ -189,7 +196,7 @@ module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-article [data]=\"articleOne\"></app-article>\n<div class=\"article-content\">\n  <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-lg-12\">\n          \tThis example used :\n          \t<ul>          \t\n          \t\t<li>JDK 1.8</li>\n          \t\t<li>Eclipse IDE</li>\n          \t\t<li>Apache tomcat server 7</li>\n          \t\t<li>Maven</li>\n          \t</ul>\n          \t<div>\n          \t\n          \t\t<h4>Step 01 : </h4>\n          \t\t<p>Create a dynamic web project using eclipse IDE.</p>\n          \t\t<h4>Step 02 : </h4>\n          \t\t<p>Then convert the created project into maven project. It will create the POM.xml \n          \t\t    inside the project root directory. \n\t\t\t\t\tFollowing maven dependencies should be added to POM.xml to use the jersey. \n          \t\t</p>\n          \t\t<pre class=\"article-code\"><code >\n     &lt;dependencies&gt;\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;\n            &lt;artifactId&gt;jersey-server&lt;/artifactId&gt;\n            &lt;version&gt;2.20&lt;/version&gt;\n        &lt;/dependency&gt;\n\n        &lt;dependency&gt;\n            &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;\n            &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;\n            &lt;version&gt;2.20&lt;/version&gt;\n        &lt;/dependency&gt;\n    &lt;/dependencies&gt;</code></pre>\n    \n          \t\t<h4>Step 03 : </h4>\n          \t\t<p>Create the service class with REST service methods</p>\n          \t\t<pre class=\"article-code\"><code>\n       \t\timport javax.ws.rs.GET;\n\t\timport javax.ws.rs.Path;\n\t\timport javax.ws.rs.PathParam;\n\t\timport javax.ws.rs.core.Response;\n\t\t\n\t\t@Path(\"/sayhello\")\n\t\tpublic class HelloWorldService {{ '{' }}\n\t\t\n\t\t    @GET\n\t\t    @Path(\"/{{ '{' }}name{{ '}' }}\")\n\t\t    public Response sayHello(@PathParam(\"name\") String msg) {{ '{' }}\n\t\t        String output = \"Hello, \" + msg + \"!\";\n\t\t        return Response.status(200).entity(output).build();\n\t\t    {{ '}' }}\t\t\t\t\t\t    \n\t\t{{ '}' }}\t\t\t\t\t          \t\t\t\t\n          \t\t</code></pre>\n          \t\t<h4>Step 04 : </h4>\n          \t\t<p>Specify the package which reside the service classes implementing\n          \t\t jersey ResourceConfig class </p>\n          \t\t <pre class=\"article-code\">\n          \t\t \t<code>\n    import org.glassfish.jersey.server.ResourceConfig;\n\n\tpublic class HelloWorldApplication extends ResourceConfig {{ '{' }}\n\t    public HelloWorldApplication() {{ '{' }}\n\t        packages(\"com.example.services\");\n\t    {{ '}' }}\n\t{{ '}' }}\t    \n          \t\t \t</code>\n          \t\t </pre>\n          \t\t \n          \t\t <h4>Step 05 : </h4>\n          \t\t <p>If the project does not have a web.xml file create as below.</p>\n          \t\t <pre class=\"article-code\"><code>\n\t&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n\t&lt;web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \n\txmlns=\"http://java.sun.com/xml/ns/javaee\" \n\txsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee \n\thttp://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" \n\tversion=\"3.0\"&gt;\n\t\t  &lt;display-name&gt;Web Service Demo&lt;/display-name&gt;\n\t\t    &lt;servlet&gt;\n\t\t        &lt;servlet-name&gt;WebServiceDemo&lt;/servlet-name&gt;\n\t\t        &lt;servlet-class&gt;org.glassfish.jersey.servlet.ServletContainer\n\t\t        &lt;/servlet-class&gt;\n\t\t        &lt;init-param&gt;\n\t\t            &lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;\n\t\t            &lt;param-value&gt;com.example.app.HelloWorldApplication&lt;/param-value&gt;\n\t\t\t     &lt;{{ '!' }} --ResourceConfig class implementation --&gt;\n\t\t        &lt;/init-param&gt;\n\t\t        &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;\n\t\t    &lt;/servlet&gt;\n\t\t    &lt;servlet-mapping&gt;\n\t\t        &lt;servlet-name&gt; WebServiceDemo &lt;/servlet-name&gt;\n\t\t        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;\n\t\t    &lt;/servlet-mapping&gt;\n\t&lt;/web-app&gt;          \t\t \n          \t\t </code></pre>\n          \t\t \n          \t\t <h4>Step 06 : </h4>\n          \t\t <p>Create the war file using maven and run on tomcat web container. Use a browser and enter the \n          \t\t URL as follows to see the response.</p>\n          \t\t <img class=\"col-lg-6\" src=\"/assets/img/articles/client-browser.png\" \n          \t\talt=\"Create Dynamic Web Project\" width=\"100%\" >\n          \t</div>       \t\n          </div>\n        </div>\n   </div>\n   <app-send-email [articleTitle]=\"articleOne.title\"></app-send-email>\n</div>\n"
+module.exports = "<app-article [data]=\"articleOne\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n        <div class=\"row\">\r\n          <div class=\"col-lg-12\">\r\n          \tThis example used :\r\n          \t<ul>          \t\r\n          \t\t<li>JDK 1.8</li>\r\n          \t\t<li>Eclipse IDE</li>\r\n          \t\t<li>Apache tomcat server 7</li>\r\n          \t\t<li>Maven</li>\r\n          \t</ul>\r\n          \t<div>\r\n          \t\r\n          \t\t<h4>Step 01 : </h4>\r\n          \t\t<p>Create a dynamic web project using eclipse IDE.</p>\r\n          \t\t<h4>Step 02 : </h4>\r\n          \t\t<p>Then convert the created project into maven project. It will create the POM.xml \r\n          \t\t    inside the project root directory. \r\n\t\t\t\t\tFollowing maven dependencies should be added to POM.xml to use the jersey. \r\n          \t\t</p>\r\n          \t\t<pre class=\"article-code\"><code >\r\n     &lt;dependencies&gt;\r\n        &lt;dependency&gt;\r\n            &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;\r\n            &lt;artifactId&gt;jersey-server&lt;/artifactId&gt;\r\n            &lt;version&gt;2.20&lt;/version&gt;\r\n        &lt;/dependency&gt;\r\n\r\n        &lt;dependency&gt;\r\n            &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;\r\n            &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;\r\n            &lt;version&gt;2.20&lt;/version&gt;\r\n        &lt;/dependency&gt;\r\n    &lt;/dependencies&gt;</code></pre>\r\n    \r\n          \t\t<h4>Step 03 : </h4>\r\n          \t\t<p>Create the service class with REST service methods</p>\r\n          \t\t<pre class=\"article-code\"><code>\r\n       \t\timport javax.ws.rs.GET;\r\n\t\timport javax.ws.rs.Path;\r\n\t\timport javax.ws.rs.PathParam;\r\n\t\timport javax.ws.rs.core.Response;\r\n\t\t\r\n\t\t@Path(\"/sayhello\")\r\n\t\tpublic class HelloWorldService {{ '{' }}\r\n\t\t\r\n\t\t    @GET\r\n\t\t    @Path(\"/{{ '{' }}name{{ '}' }}\")\r\n\t\t    public Response sayHello(@PathParam(\"name\") String msg) {{ '{' }}\r\n\t\t        String output = \"Hello, \" + msg + \"!\";\r\n\t\t        return Response.status(200).entity(output).build();\r\n\t\t    {{ '}' }}\t\t\t\t\t\t    \r\n\t\t{{ '}' }}\t\t\t\t\t          \t\t\t\t\r\n          \t\t</code></pre>\r\n          \t\t<h4>Step 04 : </h4>\r\n          \t\t<p>Specify the package which reside the service classes implementing\r\n          \t\t jersey ResourceConfig class </p>\r\n          \t\t <pre class=\"article-code\">\r\n          \t\t \t<code>\r\n    import org.glassfish.jersey.server.ResourceConfig;\r\n\r\n\tpublic class HelloWorldApplication extends ResourceConfig {{ '{' }}\r\n\t    public HelloWorldApplication() {{ '{' }}\r\n\t        packages(\"com.example.services\");\r\n\t    {{ '}' }}\r\n\t{{ '}' }}\t    \r\n          \t\t \t</code>\r\n          \t\t </pre>\r\n          \t\t \r\n          \t\t <h4>Step 05 : </h4>\r\n          \t\t <p>If the project does not have a web.xml file create as below.</p>\r\n          \t\t <pre class=\"article-code\"><code>\r\n\t&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\r\n\t&lt;web-app xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\n\txmlns=\"http://java.sun.com/xml/ns/javaee\" \r\n\txsi:schemaLocation=\"http://java.sun.com/xml/ns/javaee \r\n\thttp://java.sun.com/xml/ns/javaee/web-app_3_0.xsd\" \r\n\tversion=\"3.0\"&gt;\r\n\t\t  &lt;display-name&gt;Web Service Demo&lt;/display-name&gt;\r\n\t\t    &lt;servlet&gt;\r\n\t\t        &lt;servlet-name&gt;WebServiceDemo&lt;/servlet-name&gt;\r\n\t\t        &lt;servlet-class&gt;org.glassfish.jersey.servlet.ServletContainer\r\n\t\t        &lt;/servlet-class&gt;\r\n\t\t        &lt;init-param&gt;\r\n\t\t            &lt;param-name&gt;javax.ws.rs.Application&lt;/param-name&gt;\r\n\t\t            &lt;param-value&gt;com.example.app.HelloWorldApplication&lt;/param-value&gt;\r\n\t\t\t     &lt;{{ '!' }} --ResourceConfig class implementation --&gt;\r\n\t\t        &lt;/init-param&gt;\r\n\t\t        &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;\r\n\t\t    &lt;/servlet&gt;\r\n\t\t    &lt;servlet-mapping&gt;\r\n\t\t        &lt;servlet-name&gt; WebServiceDemo &lt;/servlet-name&gt;\r\n\t\t        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;\r\n\t\t    &lt;/servlet-mapping&gt;\r\n\t&lt;/web-app&gt;          \t\t \r\n          \t\t </code></pre>\r\n          \t\t \r\n          \t\t <h4>Step 06 : </h4>\r\n          \t\t <p>Create the war file using maven and run on tomcat web container. Use a browser and enter the \r\n          \t\t URL as follows to see the response.</p>\r\n          \t\t <img class=\"col-lg-6\" src=\"/assets/img/articles/client-browser.png\" \r\n          \t\talt=\"Create Dynamic Web Project\" width=\"100%\" >\r\n          \t</div>       \t\r\n          </div>\r\n        </div>\r\n   </div>\r\n   <app-send-email [articleTitle]=\"articleOne.title\"></app-send-email>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -243,7 +250,7 @@ var ArticleContent1Component = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
+module.exports = ""
 
 /***/ }),
 
@@ -254,7 +261,7 @@ module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-article [data]=\"articleTwo\"></app-article>\n<div class=\"article-content\">\n  <div class=\"container\">\n     <div class=\"row\">\n       <div class=\"col-lg-12\">\n       \t\t<h5>What is Spring and Why we use it?</h5>\n       \t\t<p>Spring is a java framework which use to implement loosely coupled and easily testable,\n       \t\t extendable applications using the feature Dependency Injection.</p>\n       \t\t \n       \t\t <pre class=\"article-code\"><code >\n        /**\n\t * Core Java Example\n\t * */\n\tpublic class HelloWorld {{ '{' }}\n\t\t\n\t\tprivate Person person = new Person();\n\t\t\n\t\tpublic String sayHello() {{ '{' }}\t\t\t\n\t\t\treturn \"Hello \" + person.getName();\n\t\t{{ '}' }}\t\n\t{{ '}' }}\n       \t\t </code>\n       \t\t </pre>\n       \t\t <pre class=\"article-code\"><code >\n        import org.springframework.beans.factory.annotation.Autowired;\n      \t /**\n\t * Spring Example using DI\n\t * */\n\tpublic class HelloSpring {{ '{' }}\n\t\n\t\t@Autowired\n\t\tprivate Person person;\n\t\t\n\t\tpublic String sayHello() {{ '{' }}\t\t\n\t\t\treturn \"Hello \" + person.getName();\n\t\t{{ '}' }}\n\t{{ '}' }}\n\t</code></pre>\n\t<pre class=\"article-code\"><code >\n\timport org.springframework.stereotype.Component;\n\t/**\n\t * Spring Example using DI - component class\n\t * */\n\t@Component\n\tpublic class Person {{ '{' }}\n\t\n\t\tprivate String name;\n\t\tprivate Integer age;\n\t\t\n\t\t//getters and setters\t\t\n\t{{ '}' }}\n       \t\t </code></pre>\n       \t\t <h5>What is Spring MVC?</h5>\n       \t\t <p>Spring MVC framework use to develop web application with decoupling model, view and controller.</p>\n       \t\t <h5>What is Spring Boot?</h5>\n       \t\t <p>Spring application needs list of configuration files. i.e. dispatcher servlet, component scan, \n       \t\t view resolver, resource mappings etc. If the spring application use hibernate, \n       \t\t it requires to configure entity manager, transaction manager, data source in separate configuration files. </p>\n       \t\t <p>Spring Boot auto configure the application by looking at available framework \n       \t\t on class path and existing configurations without above mentioned configuration files. </p>\n       \t\t \n       \t\t <p>Spring boot starters are convenient dependencies which built with basic spring application dependencies \n       \t\t like spring web, hibernate validator, jpa, Jackson databind, log4j, tomcat embedded servlet container. For instance, using spring boot starter \n       \t\t web dependency, we can develop production ready web application with restfull web services without specifying each \n       \t\t dependency above and compatible versions.</p>\n       \t\t <pre class=\"article-code\"><code >\n\t&lt;dependency&gt;\n\t\t&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\n\t\t&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;\n\t&lt;/dependency&gt;\n       \t\t </code></pre>\n       </div>\n     </div>\n  </div>\n</div>\n<app-send-email [articleTitle]=\"articleTwo.title\"></app-send-email>\n"
+module.exports = "<app-article [data]=\"articleTwo\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n     <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h5>What is Spring and Why we use it?</h5>\r\n       \t\t<p>Spring is a java framework which use to implement loosely coupled and easily testable,\r\n       \t\t extendable applications using the feature Dependency Injection.</p>\r\n       \t\t \r\n       \t\t <pre class=\"article-code\"><code >\r\n        /**\r\n\t * Core Java Example\r\n\t * */\r\n\tpublic class HelloWorld {{ '{' }}\r\n\t\t\r\n\t\tprivate Person person = new Person();\r\n\t\t\r\n\t\tpublic String sayHello() {{ '{' }}\t\t\t\r\n\t\t\treturn \"Hello \" + person.getName();\r\n\t\t{{ '}' }}\t\r\n\t{{ '}' }}\r\n       \t\t </code>\r\n       \t\t </pre>\r\n       \t\t <pre class=\"article-code\"><code >\r\n        import org.springframework.beans.factory.annotation.Autowired;\r\n      \t /**\r\n\t * Spring Example using DI\r\n\t * */\r\n\tpublic class HelloSpring {{ '{' }}\r\n\t\r\n\t\t@Autowired\r\n\t\tprivate Person person;\r\n\t\t\r\n\t\tpublic String sayHello() {{ '{' }}\t\t\r\n\t\t\treturn \"Hello \" + person.getName();\r\n\t\t{{ '}' }}\r\n\t{{ '}' }}\r\n\t</code></pre>\r\n\t<pre class=\"article-code\"><code >\r\n\timport org.springframework.stereotype.Component;\r\n\t/**\r\n\t * Spring Example using DI - component class\r\n\t * */\r\n\t@Component\r\n\tpublic class Person {{ '{' }}\r\n\t\r\n\t\tprivate String name;\r\n\t\tprivate Integer age;\r\n\t\t\r\n\t\t//getters and setters\t\t\r\n\t{{ '}' }}\r\n       \t\t </code></pre>\r\n       \t\t <h5>What is Spring MVC?</h5>\r\n       \t\t <p>Spring MVC framework use to develop web application with decoupling model, view and controller.</p>\r\n       \t\t <h5>What is Spring Boot?</h5>\r\n       \t\t <p>Spring application needs list of configuration files. i.e. dispatcher servlet, component scan, \r\n       \t\t view resolver, resource mappings etc. If the spring application use hibernate, \r\n       \t\t it requires to configure entity manager, transaction manager, data source in separate configuration files. </p>\r\n       \t\t <p>Spring Boot auto configure the application by looking at available framework \r\n       \t\t on class path and existing configurations without above mentioned configuration files. </p>\r\n       \t\t \r\n       \t\t <p>Spring boot starters are convenient dependencies which built with basic spring application dependencies \r\n       \t\t like spring web, hibernate validator, jpa, Jackson databind, log4j, tomcat embedded servlet container. For instance, using spring boot starter \r\n       \t\t web dependency, we can develop production ready web application with restfull web services without specifying each \r\n       \t\t dependency above and compatible versions.</p>\r\n       \t\t <pre class=\"article-code\"><code >\r\n\t&lt;dependency&gt;\r\n\t\t&lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;\r\n\t\t&lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;\r\n\t&lt;/dependency&gt;\r\n       \t\t </code></pre>\r\n       </div>\r\n     </div>\r\n  </div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleTwo.title\"></app-send-email>\r\n"
 
 /***/ }),
 
@@ -308,7 +315,7 @@ var ArticleContent2Component = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".article-content{\r\n\tcolor: black;\r\n}"
+module.exports = ""
 
 /***/ }),
 
@@ -348,7 +355,7 @@ var ArticleContent3Component = /** @class */ (function () {
     function ArticleContent3Component() {
     }
     ArticleContent3Component.prototype.ngOnInit = function () {
-        this.articleThree = { 'title': 'Introduction to Containerization and Docker',
+        this.articleThree = { 'title': 'Containerization and Docker',
             'lastUpdated': 'October 02 2018' };
     };
     ArticleContent3Component = __decorate([
@@ -366,6 +373,71 @@ var ArticleContent3Component = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/article-content4/article-content4.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/article-content4/article-content4.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/article-content4/article-content4.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content4/article-content4.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleFour\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n     <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h4>Pre-requisite:</h4>\r\n       \t\t<ul>          \t\r\n          \t\t<li>LAMP: Linux Apache MySQL PHP</li>\r\n          \t\t<li>PHP framework CodeIngiter</li>\r\n          \t</ul>       \t\t\r\n       </div>\r\n       <div class=\"col-lg-12\">          \t\r\n      \t\t<h4>Step 01 : </h4>\r\n      \t\t<p>Install LAMP: LAMP is free open source web stack use to host web applications. </p>\r\n      \t\t<h4>Step 02 : </h4>\r\n      \t\t<p>Install configure <a href=\"https://www.codeigniter.com/\">CodeIgniter</a> framework for LAMP to start the development.\r\n      \t\tDownload or clone the github application into the application folder inside the CodeIgniter folder structure which \r\n      \t\tconfigured inside the Apache.</p>\r\n      \t\t<div>\r\n       \t\tFind the github repository : <a href=\"https://github.com/piyumi11/PhpExample\" target=\"_blank\"> \r\n       \t\t\t<i class=\"fas fa-download article-icon\"></i>\r\n       \t\t</a> </div>      \r\n<!--        \t\tneed to add more details later for this article -->\t\t\r\n    \t</div>\r\n    </div>   \r\n  </div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleFour.title\"></app-send-email>"
+
+/***/ }),
+
+/***/ "./src/app/article-content4/article-content4.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/article-content4/article-content4.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ArticleContent4Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent4Component", function() { return ArticleContent4Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent4Component = /** @class */ (function () {
+    function ArticleContent4Component() {
+    }
+    ArticleContent4Component.prototype.ngOnInit = function () {
+        this.articleFour = { 'title': 'LAMP with CodeIgniter',
+            'lastUpdated': 'April 19 2019' };
+    };
+    ArticleContent4Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content4',
+            template: __webpack_require__(/*! ./article-content4.component.html */ "./src/app/article-content4/article-content4.component.html"),
+            styles: [__webpack_require__(/*! ./article-content4.component.css */ "./src/app/article-content4/article-content4.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent4Component);
+    return ArticleContent4Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/article/article.component.css":
 /*!***********************************************!*\
   !*** ./src/app/article/article.component.css ***!
@@ -373,7 +445,7 @@ var ArticleContent3Component = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".article-title {\r\n\tcolor: black;\r\n\tpadding: 8px 8px 0px 8px;\r\n}\r\n.article-date{\r\n\tcolor: black;\r\n\tpadding-left: 8px;\r\n}"
+module.exports = ".article-title {\r\n\tcolor: black;\r\n\tpadding: 8px 8px 0px 8px;\r\n\ttext-shadow: 1px 1px 3px #c0c0c0;\r\n}\r\n.article-date{\r\n\tcolor: #959595;\r\n\tpadding-left: 8px;\r\n}"
 
 /***/ }),
 
@@ -384,7 +456,7 @@ module.exports = ".article-title {\r\n\tcolor: black;\r\n\tpadding: 8px 8px 0px 
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <h3 *ngIf=\"data\" class=\"article-title\" >\n  \t{{data.title}}\n  </h3>  \n  <p class=\"article-date\"><small><i>Last Updated: {{data.lastUpdated}}</i></small><p>\n</div>\n"
+module.exports = "<div>\r\n  <h2 *ngIf=\"data\" class=\"article-title\" >\r\n  \t{{data.title}}\r\n  </h2>  \r\n  <p class=\"article-date\"><small><i>Last Updated: {{data.lastUpdated}}</i></small><p>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -442,7 +514,7 @@ var ArticleComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".card-home {\r\n\tbackground-color:#104e65;\t\r\n}\r\n.card-border-home {\t\r\n\tborder: 0px;\r\n}\r\n.card-font-home a{\r\n\tcolor:white;\r\n}\r\n"
+module.exports = ".card-home {\r\n\tbackground-color:#f3f3f3;\t\r\n}\r\n.card-home:hover{\t\r\n\tbackground-color:#dbdbdb;\r\n}\r\n.card-border-home {\t\r\n\tborder: 0px;   \r\n}\r\n.card-font-home a{\r\n\tcolor:black;\r\n\ttext-shadow: 2px 2px 3px #c0c0c0;\r\n}\r\n.card-font-home a:hover{\r\n\tcolor:black;\r\n\ttext-decoration: none;\r\n}\r\n.card-deck .card {\r\n\tpadding-left: 0px !important;\r\n\tpadding-right: 0px !important;\r\n\tpadding-bottom: 0px !important;\r\n\tpadding-top: 0px !important;\r\n}"
 
 /***/ }),
 
@@ -453,7 +525,7 @@ module.exports = ".card-home {\r\n\tbackground-color:#104e65;\t\r\n}\r\n.card-bo
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\n  <div class=\"container\">\n      <div class=\"row\">\n        <div class=\"col-lg-8 offset-lg-1\">\n        \t<div class=\"card-deck\">\n\t\t\t  <div class=\"card card-border-home\">\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\n\t\t\t    <div class=\"card-body card-home\">\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example</a></p>\n\t\t\t    </div>\n\t\t\t  </div>\n\t\t\t  <div class=\"card card-border-home\">\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\n\t\t\t    <div class=\"card-body card-home\">\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Introduction to Spring MVC & Spring Boot</a></p>\n\t\t\t    </div>\n\t\t\t  </div>\n\t\t\t  <div class=\"card card-border-home\">\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\n\t\t\t    <div class=\"card-body card-home\">\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Introduction to Containerization and Docker </a></p>\n\t\t\t    </div>\n\t\t\t  </div>\n\t\t\t</div>\n        </div>\n      </div>\n  </div>\n</div>"
+module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a href = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -516,7 +588,7 @@ module.exports = ".btn-feedback {\r\n\tbackground-color:#104e65;\r\n\tcolor: whi
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\t<div class=\"row card-body float-right\">\n\t\tWas this article helpful? &nbsp;&nbsp;\n\t\t<button type=\"button\" class=\"btn-feedback\" (click)=\"sendMail('Yes')\">\n\t\t\tYes\n\t\t</button>&nbsp;\n \t\t<button type=\"button\" class=\"btn-feedback\" (click)=\"sendMail('No')\">\n \t\t\tNo\n \t\t</button>\n\t</div>\t\n</div>\n\n"
+module.exports = "<div class=\"container\">\r\n\t<div class=\"row card-body float-right\">\r\n\t\tWas this article helpful? &nbsp;&nbsp;\r\n\t\t<button type=\"button\" class=\"btn-feedback\" (click)=\"sendMail('Yes')\">\r\n\t\t\tYes\r\n\t\t</button>&nbsp;\r\n \t\t<button type=\"button\" class=\"btn-feedback\" (click)=\"sendMail('No')\">\r\n \t\t\tNo\r\n \t\t</button>\r\n\t</div>\t\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -633,7 +705,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\dialog\projectname\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\Dev\angularTest\src\main.ts */"./src/main.ts");
 
 
 /***/ })

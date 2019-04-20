@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\nbody, html {\n  overflow-x: hidden;\n   height: 100%;\n   margin: 0;\n}\n.article-code {\n\tbackground-color: #104e65;\n\tcolor: #e5e5e5;\n}\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\r\nbody, html {\r\n  overflow-x: hidden;\r\n   height: 100%;\r\n   margin: 0;\r\n   font-family: Georgia, serif;\r\n}\r\n.article-code {\r\n\tbackground-color: #e5e5e5;\r\n\tcolor: #000000;\r\n}\r\n.article-icon {\r\n\tcolor: black;\r\n}\r\n.article-content{\r\n\tcolor: black;\t\r\n}"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\dialog\projectname\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! E:\Dev\angularTest\src\styles.css */"./src/styles.css");
 
 
 /***/ })
