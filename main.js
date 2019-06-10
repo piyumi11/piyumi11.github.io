@@ -107,12 +107,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
 /* harmony import */ var _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./article-content3/article-content3.component */ "./src/app/article-content3/article-content3.component.ts");
 /* harmony import */ var _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./article-content4/article-content4.component */ "./src/app/article-content4/article-content4.component.ts");
+/* harmony import */ var _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./article-content5/article-content5.component */ "./src/app/article-content5/article-content5.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -137,7 +139,8 @@ var AppModule = /** @class */ (function () {
                 _send_email_send_email_component__WEBPACK_IMPORTED_MODULE_7__["SendEmailComponent"],
                 _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
                 _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__["ArticleContent3Component"],
-                _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__["ArticleContent4Component"]
+                _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__["ArticleContent4Component"],
+                _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__["ArticleContent5Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -157,6 +160,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: 'lamp_and_codeigniter',
                         component: _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__["ArticleContent4Component"]
+                    },
+                    {
+                        path: 'php_login_example',
+                        component: _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__["ArticleContent5Component"]
                     },
                     {
                         path: '',
@@ -391,7 +398,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-article [data]=\"articleFour\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n     <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<p>This example use LAMP stack and CodeIngiter php framework to develop a small web-site. LAMP : Linux, Apache, MySQL, PHP\r\n       \t\tis a free open source web stack use to host web applications. CodeIgniter is a free php framework with lot of developer \r\n       \t\tconvenient features to develop web sites with high performance. Follow the steps provided below to build this website. \r\n       \t\t </p>\t\r\n       </div>\r\n       <div class=\"col-lg-12\">          \t\r\n      \t\t<h4>Step 01 : </h4>\r\n      \t\t<p>First have a Linux environment. Following commands tried on Ubuntu 18.04(LTS).</p>\r\n      \t\t\r\n      \t\t<h4>Step 02 : </h4>\r\n      \t\t<p>Install apache http server.</p>\r\n      \t\t<pre class=\"article-code\"><code >\r\n      \t\tsudo apt install apache2 \r\n      \t\t</code></pre>\r\n      \t\t\r\n      \t\t<h4>Step 03 : </h4>\r\n      \t\t<p>Install mysql server</p>\r\n      \t\t<pre class=\"article-code\"><code >\r\n      \t\tsudo apt install mysql-server\r\n      \t\t</code></pre>\r\n      \t\t\r\n      \t\t<h4>Step 04 : </h4>\r\n      \t\t<p>Install PHP 7.2, apache support and mySql support.</p>\r\n      \t\t<pre class=\"article-code\"><code >\r\n      \t\tsudo apt install php7.2 libapache2-mod-php7.2 php-mysql\r\n      \t\t</code></pre>\r\n      \t\t\r\n\t\t\t<h4>Step 05 : </h4>\r\n\t\t\t<p>Login to mysql shell and create a user, database for the application.this password should be different to root user password. </p>\r\n\t\t\t<pre class=\"article-code\"><code >\r\n\t\tsudo mysql -u root\r\n\t\t\r\n\t\tCREATE DATABASE webdata;\r\n\t\tGRANT ALL ON webdata.* TO 'webuser' IDENTIFIED BY 'password';\t\t\t\r\n\t\t\r\n\t\tCREATE TABLE stud (\r\n\t\troll_no INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,\r\n\t\tname VARCHAR(30),\r\n\t\tcreated DATETIME DEFAULT NULL,\r\n\t\tmodified DATETIME DEFAULT NULL\r\n\t\t);\r\n\t\t\t</code></pre>\r\n\t\t\t\r\n\t\t\t<h4>Step 06 : </h4>\r\n\t\t\t<p>Download the <a href=\"https://www.codeigniter.com/\" target=\"_blank\">CodeIgniter</a> framework zip, extract it and copy all the files\r\n\t\t\t into var/www/html directory.</p>\r\n\t\t\t\r\n\t\t\t<h4>Step 07 : </h4>\r\n\t\t\t<p>download the <a href=\"https://github.com/piyumi11/PhpExample\" target=\"_blank\">phpExmple</a> and copy into\r\n\t\t\t var/www/html/codeigniter/application directory.</p>\r\n\t\t\t\r\n\t\t\t<h4>Step 08 : </h4>\r\n\t\t\t<p>See the output and check how php routes works in this application.</p>\r\n\t\t\t<img src=\"/assets/img/articles/php-example.png\" \r\n          \t\talt=\"Php example output in browser\"  >\r\n\t\t\t      \t\t\t\t\r\n    \t</div>\r\n    </div>   \r\n  </div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleFour.title\"></app-send-email>"
+module.exports = "<app-article [data]=\"articleFour\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n     <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<p>This example use LAMP stack and CodeIngiter php framework to develop a small web-site. LAMP : Linux, Apache, MySQL, PHP\r\n       \t\tis a free open source web stack use to host web applications. CodeIgniter is a free php framework with lot of developer \r\n       \t\tconvenient features to develop web sites with high performance. Follow the steps provided below to build this website. \r\n       \t\t </p>\t\r\n       </div>\r\n       <div class=\"col-lg-12\">          \t\r\n      \t\t<h4>Step 01 : </h4>\r\n      \t\t<p>First have a Linux environment. Following commands tried on Ubuntu 18.04(LTS).</p>\r\n      \t\t\r\n      \t\t<h4>Step 02 : </h4>\r\n      \t\t<p>Install apache http server.</p>\r\n      \t\t<pre class=\"article-code\"><code >\r\n      \t\tsudo apt install apache2 \r\n      \t\t</code></pre>\r\n      \t\t\r\n      \t\t<h4>Step 03 : </h4>\r\n      \t\t<p>Install mysql server</p>\r\n      \t\t<pre class=\"article-code\"><code >\r\n      \t\tsudo apt install mysql-server\r\n      \t\t</code></pre>\r\n      \t\t\r\n      \t\t<h4>Step 04 : </h4>\r\n      \t\t<p>Install PHP 7.2, apache support and mySql support.</p>\r\n      \t\t<pre class=\"article-code\"><code >\r\n      \t\tsudo apt install php7.2 libapache2-mod-php7.2 php-mysql\r\n      \t\t</code></pre>\r\n      \t\t\r\n\t\t\t<h4>Step 05 : </h4>\r\n\t\t\t<p>Login to mysql shell and create a user, database for the application.this password should be different to root user password. </p>\r\n\t\t\t<pre class=\"article-code\"><code >\r\n\t\tsudo mysql -u root\r\n\t\t\r\n\t\tCREATE DATABASE webdata;\r\n\t\tGRANT ALL ON webdata.* TO 'webuser' IDENTIFIED BY 'password';\t\t\t\r\n\t\t\r\n\t\tCREATE TABLE stud (\r\n\t\troll_no INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,\r\n\t\tname VARCHAR(30),\r\n\t\tcreated DATETIME DEFAULT NULL,\r\n\t\tmodified DATETIME DEFAULT NULL\r\n\t\t);\r\n\t\t\t</code></pre>\r\n\t\t\t\r\n\t\t\t<h4>Step 06 : </h4>\r\n\t\t\t<p>Download the <a href=\"https://www.codeigniter.com/\" target=\"_blank\">CodeIgniter</a> framework zip, extract it and copy all the files\r\n\t\t\t into var/www/html directory.</p>\r\n\t\t\t\r\n\t\t\t<h4>Step 07 : </h4>\r\n\t\t\t<p>download the <a href=\"https://github.com/piyumi11/StudentApplication\" target=\"_blank\">phpExmple</a> and copy into\r\n\t\t\t var/www/html/codeigniter/ directory.</p>\r\n\t\t\t\r\n\t\t\t<h4>Step 08 : </h4>\r\n\t\t\t<p>See the output and check how php routes works in this application.</p>\r\n\t\t\t<img src=\"/assets/img/articles/php-example.png\" \r\n          \t\talt=\"Php example output in browser\"  >\r\n\t\t\t      \t\t\t\t\r\n    \t</div>\r\n    </div>   \r\n  </div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleFour.title\"></app-send-email>"
 
 /***/ }),
 
@@ -432,6 +439,71 @@ var ArticleContent4Component = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ArticleContent4Component);
     return ArticleContent4Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article-content5/article-content5.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/article-content5/article-content5.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/article-content5/article-content5.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content5/article-content5.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleThree\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n     <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\tThis example used :\r\n          \t<ul>         \r\n          \t\t<li>PHP 7.2.15-0</li>\r\n\t\t\t\t<li>ubuntu 0.18.04.2</li>\r\n\t\t\t\t<li>MySQL server 5.7.25-0</li>\r\n\t\t\t\t<li>Apache 2.4.29</li>\r\n\t\t\t\t<li>CodeIgniter</li>\r\n          \t</ul>\r\n       \t\t<p>\r\n       \t\tFind the github code exmple in <a href=\"https://github.com/piyumi11/StudentApplication\" target=\"_blank\">here</a>.\r\n       \t\tGit commit <a href=\"https://github.com/piyumi11/StudentApplication/commit/48710fc49e800b587b2f713f545fcca763ea2939\" target=\"_blank\">\r\n       \t\tadd login implmentation</a> contains the complete code.</p>\r\n       </div>\r\n    </div>\r\n    <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h4>Step 01 : </h4>\r\n          \t<p>Create the database table to insert users. </p>\r\n          \t<pre class=\"article-code\">\r\n          \t<code>\r\n\t\t\tCREATE TABLE users (\r\n\t\t\t    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,\r\n\t\t\t    username VARCHAR(50) NOT NULL UNIQUE,\r\n\t\t\t    password VARCHAR(255) NOT NULL,\r\n\t\t\t    created_at DATETIME DEFAULT CURRENT_TIMESTAMP\r\n\t\t\t);\r\n     \t\t</code></pre>\r\n       </div>\r\n    </div>   \r\n    <div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h4>Step 02 : </h4>\r\n          \t<p>Create the controller class : Account_controller.php to process the login, signin and logout functions.\r\n          \tThis example use <strong>password_hash()</strong> one way PHP hashing function to create strong password hash within\r\n          \tsignin route. This applies a salt to password, hence two users have same password this function create different password hashes.</p>\r\n          \t<p>When login, use <strong>password_verify()</strong> PHP method to compare user given password and the password in database table.</p>\r\n          \t<p>Logout method unset the all session variables and destroy the session.</p>\r\n       </div>\r\n   \t</div>\r\n   \t<div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h4>Step 03 : </h4>\r\n          \t<p><strong>Login_form.php</strong> and <strong>Signin_form.php</strong> contains the HTML forms.</p>\r\n       </div>\r\n   \t</div>\r\n   \t<div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n       \t\t<h4>Step 04 : </h4>\r\n          \t<p><strong>header.php</strong> file is common for all HTML pages. This contains the links to sigin, login and logout.\r\n          \tLogout link and logged user name display only user has already logged in to the session else display the login link.</p>\r\n          \t<img src=\"/assets/img/articles/header.png\" alt=\"Header Page after loggedin\" width=\"100%\" >\r\n       </div>\r\n   \t</div>\r\n  </div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleThree.title\"></app-send-email>"
+
+/***/ }),
+
+/***/ "./src/app/article-content5/article-content5.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/article-content5/article-content5.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ArticleContent5Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent5Component", function() { return ArticleContent5Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent5Component = /** @class */ (function () {
+    function ArticleContent5Component() {
+    }
+    ArticleContent5Component.prototype.ngOnInit = function () {
+        this.articleThree = { 'title': 'PHP login example',
+            'lastUpdated': 'June 09 2019' };
+    };
+    ArticleContent5Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content5',
+            template: __webpack_require__(/*! ./article-content5.component.html */ "./src/app/article-content5/article-content5.component.html"),
+            styles: [__webpack_require__(/*! ./article-content5.component.css */ "./src/app/article-content5/article-content5.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent5Component);
+    return ArticleContent5Component;
 }());
 
 
@@ -525,7 +597,7 @@ module.exports = ".card-home {\r\n\tbackground-color:#f3f3f3;\t\r\n}\r\n.card-ho
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\t\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
