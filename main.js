@@ -108,12 +108,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./article-content3/article-content3.component */ "./src/app/article-content3/article-content3.component.ts");
 /* harmony import */ var _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./article-content4/article-content4.component */ "./src/app/article-content4/article-content4.component.ts");
 /* harmony import */ var _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./article-content5/article-content5.component */ "./src/app/article-content5/article-content5.component.ts");
+/* harmony import */ var _article_content6_article_content6_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./article-content6/article-content6.component */ "./src/app/article-content6/article-content6.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -140,7 +142,8 @@ var AppModule = /** @class */ (function () {
                 _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
                 _article_content3_article_content3_component__WEBPACK_IMPORTED_MODULE_9__["ArticleContent3Component"],
                 _article_content4_article_content4_component__WEBPACK_IMPORTED_MODULE_10__["ArticleContent4Component"],
-                _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__["ArticleContent5Component"]
+                _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__["ArticleContent5Component"],
+                _article_content6_article_content6_component__WEBPACK_IMPORTED_MODULE_12__["ArticleContent6Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -164,6 +167,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: 'php_login_example',
                         component: _article_content5_article_content5_component__WEBPACK_IMPORTED_MODULE_11__["ArticleContent5Component"]
+                    },
+                    {
+                        path: 'design_patterns_java',
+                        component: _article_content6_article_content6_component__WEBPACK_IMPORTED_MODULE_12__["ArticleContent6Component"]
                     },
                     {
                         path: '',
@@ -510,6 +517,71 @@ var ArticleContent5Component = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/article-content6/article-content6.component.css":
+/*!*****************************************************************!*\
+  !*** ./src/app/article-content6/article-content6.component.css ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/article-content6/article-content6.component.html":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content6/article-content6.component.html ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleThree\"></app-article>\r\n<div class=\"article-content\">\r\n  <div class=\"container\">\r\n  \t<div class=\"row\">\r\n       <div class=\"col-lg-12\">\r\n        <p>\"Design patterns are descriptions of communicating objects and classes that are customized to solve a\r\n\t\tgeneral design problem in a particular context.\"\r\n\t\tReference - Design Patterns: Elements of Reusable Object-Oriented\r\n\t\tSoftware [Aside: This classic 1994 book popularized design patterns. Four authors (Erich Gamma, Richard\r\n\t\tHelm, Ralph Johnson, and John Vlissides) wrote this book and for this reason it became known as the\r\n\t\t\"Gang of Four\" (GoF) book.]</p>\r\n       </div>\r\n    </div>\r\n    <div class=\"row\">\r\n    \t<div class=\"col-lg-12\">\r\n\t    \t<p>Mainly all design patterns can divide into 3 types:</p>\r\n\t    \t<ol>\r\n\t    \t\t<li><h4>Creational patterns</h4></li>\r\n\t    \t\t\t<ul>\r\n\t    \t\t\t\t<li>Singleton pattern</li>\r\n\t    \t\t\t\t<li>Factory pattern</li>\r\n\t    \t\t\t\t<li>Abstract Factory pattern</li>\r\n\t    \t\t\t\t<li>Prototype pattern</li>\r\n\t    \t\t\t</ul>\r\n\t    \t\t<li><h4>Structural patterns</h4></li>\r\n\t    \t\t\t<ul>\r\n\t    \t\t\t\t<li>Composite pattern</li>\r\n\t    \t\t\t\t<li>Decorator pattern</li>\r\n\t    \t\t\t\t<li>Proxy pattern</li>\r\n\t    \t\t\t\t<li>Facade pattern</li>\r\n\t    \t\t\t</ul>\r\n\t    \t\t<li><h4>Behavioral patterns</h4></li>\r\n\t    \t\t\t<ul>\r\n\t    \t\t\t\t<li>Observer pattern</li> \r\n\t    \t\t\t\t<a href=\"https://github.com/piyumi11/JavaBasics/tree/master/src/designpattern/behavioural/observer\" target=\"_blank\">Github code example</a>\r\n\t    \t\t\t\t<li>State pattern</li>\r\n\t    \t\t\t\t<a href=\"https://github.com/piyumi11/JavaBasics/tree/master/src/designpattern/behavioural/state\" target=\"_blank\">Github code example</a>\r\n\t    \t\t\t\t<li>Strategy pattern</li>\r\n\t    \t\t\t\t<a href=\"https://github.com/piyumi11/JavaBasics/tree/master/src/designpattern/behavioural/strategy\" target=\"_blank\">Github code example</a>\r\n\t    \t\t\t</ul>\r\n\t    \t</ol>\r\n    \t</div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleThree.title\"></app-send-email>"
+
+/***/ }),
+
+/***/ "./src/app/article-content6/article-content6.component.ts":
+/*!****************************************************************!*\
+  !*** ./src/app/article-content6/article-content6.component.ts ***!
+  \****************************************************************/
+/*! exports provided: ArticleContent6Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent6Component", function() { return ArticleContent6Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent6Component = /** @class */ (function () {
+    function ArticleContent6Component() {
+    }
+    ArticleContent6Component.prototype.ngOnInit = function () {
+        this.articleThree = { 'title': 'Java Design Pattern examples',
+            'lastUpdated': 'June 28 2019' };
+    };
+    ArticleContent6Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content6',
+            template: __webpack_require__(/*! ./article-content6.component.html */ "./src/app/article-content6/article-content6.component.html"),
+            styles: [__webpack_require__(/*! ./article-content6.component.css */ "./src/app/article-content6/article-content6.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent6Component);
+    return ArticleContent6Component;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/article/article.component.css":
 /*!***********************************************!*\
   !*** ./src/app/article/article.component.css ***!
@@ -597,7 +669,7 @@ module.exports = ".card-home {\r\n\tbackground-color:#f3f3f3;\t\r\n}\r\n.card-ho
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\t\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\java.png\" alt=\"Java logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/design_patterns_java\" > Java Design Patterns.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\r\n\t\t\t  <div class=\"col-lg-3\"></div>\t\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
