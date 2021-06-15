@@ -112,12 +112,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_content7_article_content7_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./article-content7/article-content7.component */ "./src/app/article-content7/article-content7.component.ts");
 /* harmony import */ var _article_content8_article_content8_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./article-content8/article-content8.component */ "./src/app/article-content8/article-content8.component.ts");
 /* harmony import */ var _article_content9_article_content9_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./article-content9/article-content9.component */ "./src/app/article-content9/article-content9.component.ts");
+/* harmony import */ var _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./article-content10/article-content10.component */ "./src/app/article-content10/article-content10.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -152,7 +154,8 @@ var AppModule = /** @class */ (function () {
                 _article_content6_article_content6_component__WEBPACK_IMPORTED_MODULE_12__["ArticleContent6Component"],
                 _article_content7_article_content7_component__WEBPACK_IMPORTED_MODULE_13__["ArticleContent7Component"],
                 _article_content8_article_content8_component__WEBPACK_IMPORTED_MODULE_14__["ArticleContent8Component"],
-                _article_content9_article_content9_component__WEBPACK_IMPORTED_MODULE_15__["ArticleContent9Component"]
+                _article_content9_article_content9_component__WEBPACK_IMPORTED_MODULE_15__["ArticleContent9Component"],
+                _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__["ArticleContent10Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -192,6 +195,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: 'pdf_library_for_codeigniter',
                         component: _article_content9_article_content9_component__WEBPACK_IMPORTED_MODULE_15__["ArticleContent9Component"]
+                    },
+                    {
+                        path: 'color_conversion_in_python',
+                        component: _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__["ArticleContent10Component"]
                     },
                     {
                         path: '',
@@ -272,6 +279,71 @@ var ArticleContent1Component = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ArticleContent1Component);
     return ArticleContent1Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article-content10/article-content10.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/article-content10/article-content10.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".app-btn-color {\r\n\tcolor: black;\r\n\ttext-decoration: none;\r\n}\r\n.app-btn-color:hover {\r\n\tcolor: black;\r\n\ttext-decoration: none;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/article-content10/article-content10.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/article-content10/article-content10.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleTen\"></app-article>\r\n<div class=\"article-content\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<p>Color images can represent in combination of Red, Green, Blue pixels. Other than RGB color model, Images can \r\n\t\t\t\trepresent in CMY (Cyan, Magenta, Yellow) model and HSI (Hue, Staturation, Intensity) model also.\r\n\t\t\t\tThis article explains how RGB image can convert to CMY and HSI models in python.</p>\r\n\t\t\t\t\r\n\t\t\t\t<p>Following examples implemented and interpreted using python 3.7.6, opencv 4.5.1, matplotlib 3.1.3\r\n\t\t\t\tnumpy 1.18.1 module versions.</p>\r\n\t\t\t\t<p><strong>\"Digital Image Processing\", Rafael C. Gonzalez &   Richard E. Woods,  Addison-Wesley</strong> book contains \r\n\t\t\t\tthe equation between RGB model and CMY and HSI model conversions. Read the chapter <strong>6.2 Color Models</strong>\r\n\t\t\t\t to find more information about color models.</p>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<h4>RGB to CMY</h4>\r\n\t\t\t\t\t<p>Following is the code used on RGB image for converting into CMY model</p>\r\n\t\t\t\t\t<pre class=\"article-code\"><code>\r\n\t\t\t\t\r\n\t\t\t## color model conversion with python\r\n\r\n\t\t\timport cv2 as cv\r\n\t\t\tfrom matplotlib import pyplot as plt\r\n\t\t\timport math\r\n\t\t\timport numpy as np\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t## RGB into CMY\r\n\t\t\tdef rgb_to_cmy(r, g, b):\r\n\t\t\t    if (r, g, b) == (0, 0, 0):\r\n\t\t\t        # black\r\n\t\t\t        return 0, 0, 0\r\n\t\t\t\r\n\t\t\t    # rgb [0,255] -> cmy [0,1]\r\n\t\t\t    c = 1 - r / 255\r\n\t\t\t    m = 1 - g / 255\r\n\t\t\t    y = 1 - b / 255\r\n\t\t\t\r\n\t\t\t    # rescale \r\n\t\t\t    return c * 100, m * 100, y * 100 \r\n\t\t\t    \r\n\t\t\tpath = 'path_to/rgb_image.jpg'\r\n\r\n\t\t\t## color image read\r\n\t\t\timg = cv.imread(path)\r\n\t\t\tplt.imshow(img), plt.title('rgb'), plt.show()\r\n\t\t\t\r\n\t\t\t## result image init\r\n\t\t\toutimg = np.zeros_like(img)\r\n\t\t\t\r\n\t\t\t## rgb[0,255] -> cmy[0,1]\r\n\t\t\tx = 0\r\n\t\t\tfor row in img:    \r\n\t\t\t    y = 0\r\n\t\t\t    for color in row:        \r\n\t\t\t        result = rgb_to_cmy(color[0], color[1], color[2])      \r\n\t\t\t        outimg[x,y] = result\r\n\t\t\t        y = y + 1        \r\n\t\t\t    x = x + 1\r\n\t\t\t\r\n\t\t\tplt.imshow(outimg), plt.title('cmy'), plt.show()   \r\n\t\t\t\t\r\n          \t\t </code></pre>\r\n          \t\t <p>Following is the image results got after executing the above code example. You can compare your results with this.</p>\r\n          \t\t <img src=\"/assets/img/articles/rgb_image.PNG\" \r\n          \t\talt=\"rgb image\" width=\"30%\" >\r\n          \t\t<img src=\"/assets/img/articles/cmy_image.PNG\" \r\n          \t\talt=\"cmy image\" width=\"30%\" >\r\n          \t\t\r\n          \t\t <h4>RGB to HSI</h4>\r\n\t\t\t\t\t<p>Following is the code used on RGB image for converting into HSI model </p>\r\n\t\t\t\t\t\t\r\n\t\t\t\t\t<pre class=\"article-code\"><code>\r\n\t\t## convert RGB in 0,255 to hsi 0,1\r\n\t\tdef rgb_to_hsi(rr, gg, bb):\r\n\t\t    \r\n\t\t    if rr == gg == bb:\r\n\t\t        return 0,0,0\r\n\t\t    \r\n\t\t    r = rr / 255\r\n\t\t    g = gg / 255\r\n\t\t    b = bb / 255\r\n\t\t    \r\n\t\t    diff_rg = r-g\r\n\t\t    diff_rb = r-b\r\n\t\t    diff_gb = g-b\r\n\t\t    \r\n\t\t    h_radians = ((diff_rg+diff_rb)*0.5)/(math.sqrt(diff_rg*diff_rg+diff_rb*diff_gb))\r\n\t\t    h_degrees = math.degrees(math.acos(h_radians))    \r\n\t\t    \r\n\t\t    if b <= g :\r\n\t\t        h = h_degrees/360\r\n\t\t    else:\r\n\t\t        h = (360-h_degrees)/360\r\n\t\t        \r\n\t\t    s = 1 - (3*min(r,g,b)/(r+g+b))\r\n\t\t    \r\n\t\t    i = (r+g+b)/3\r\n\t\t    \r\n\t\t    return h*100, s*100, i*100\r\n\t\t    \r\n\t\tpath = 'path_to/rgb_image.jpg'\r\n\t\t\r\n\t\t## color image read\r\n\t    img = cv.imread(path)\r\n\t    plt.imshow(img), plt.title('rgb'), plt.show()\r\n\t\r\n\t    ## result image init\r\n\t    outimg = np.zeros_like(img)\r\n\t\r\n\t    ## rgb to cmy\r\n\t    x = 0\r\n\t    for row in img:    \r\n\t        y = 0\r\n\t        for color in row:        \r\n\t            result = rgb_to_hsi(color[0], color[1], color[2])\r\n\t            outimg[x,y] = result\r\n\t            y = y + 1        \r\n\t        x = x + 1\r\n\t\r\n\t    plt.imshow(outimg), plt.title('hsi'), plt.show()\r\n          \t\t </code></pre>\r\n\t\t\t\t\t<img src=\"/assets/img/articles/rgb_image.PNG\" \r\n          \t\talt=\"rgb image\" width=\"30%\" >\r\n          \t\t<img src=\"/assets/img/articles/hsi_image.PNG\" \r\n          \t\talt=\"hsi image\" width=\"30%\" >\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleTen.title\"></app-send-email>"
+
+/***/ }),
+
+/***/ "./src/app/article-content10/article-content10.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content10/article-content10.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ArticleContent10Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent10Component", function() { return ArticleContent10Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent10Component = /** @class */ (function () {
+    function ArticleContent10Component() {
+    }
+    ArticleContent10Component.prototype.ngOnInit = function () {
+        this.articleTen = { 'title': 'RGB, CMY, HSI Color conversion in python',
+            'lastUpdated': 'June 13 2021' };
+    };
+    ArticleContent10Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content10',
+            template: __webpack_require__(/*! ./article-content10.component.html */ "./src/app/article-content10/article-content10.component.html"),
+            styles: [__webpack_require__(/*! ./article-content10.component.css */ "./src/app/article-content10/article-content10.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent10Component);
+    return ArticleContent10Component;
 }());
 
 
@@ -885,7 +957,7 @@ module.exports = ".card-home {\r\n\tbackground-color:#f3f3f3;\t\r\n}\r\n.card-ho
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\java.png\" alt=\"Java logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/design_patterns_java\" > Java Design Patterns.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\uml.png\" alt=\"UML logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/uml\" > UML 2.5.1</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/codeigniter_and_php_session\" > CodeIgniter Session Library.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/pdf_library_for_codeigniter\" >PDF library for CodeIgniter.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\" col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\r\n\t\t\t  <div class=\" col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\r\n\t\t\t  <div class=\" col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\lamp.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\java.png\" alt=\"Java logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/design_patterns_java\" > Java Design Patterns.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\uml.png\" alt=\"UML logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/uml\" > UML 2.5.1</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\codeigniter.jpg\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/codeigniter_and_php_session\" > CodeIgniter Session Library.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\tcpdf.png\" alt=\"TCPDF logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/pdf_library_for_codeigniter\" >PDF library for CodeIgniter.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\python.PNG\" alt=\"Python logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/color_conversion_in_python\" >RGB, CMY, HSI color conversion in python.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
