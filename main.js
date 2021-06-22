@@ -113,12 +113,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_content8_article_content8_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./article-content8/article-content8.component */ "./src/app/article-content8/article-content8.component.ts");
 /* harmony import */ var _article_content9_article_content9_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./article-content9/article-content9.component */ "./src/app/article-content9/article-content9.component.ts");
 /* harmony import */ var _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./article-content10/article-content10.component */ "./src/app/article-content10/article-content10.component.ts");
+/* harmony import */ var _article_content11_article_content11_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./article-content11/article-content11.component */ "./src/app/article-content11/article-content11.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -155,7 +157,8 @@ var AppModule = /** @class */ (function () {
                 _article_content7_article_content7_component__WEBPACK_IMPORTED_MODULE_13__["ArticleContent7Component"],
                 _article_content8_article_content8_component__WEBPACK_IMPORTED_MODULE_14__["ArticleContent8Component"],
                 _article_content9_article_content9_component__WEBPACK_IMPORTED_MODULE_15__["ArticleContent9Component"],
-                _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__["ArticleContent10Component"]
+                _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__["ArticleContent10Component"],
+                _article_content11_article_content11_component__WEBPACK_IMPORTED_MODULE_17__["ArticleContent11Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -199,6 +202,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: 'color_conversion_in_python',
                         component: _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__["ArticleContent10Component"]
+                    },
+                    {
+                        path: 'opengl_clock',
+                        component: _article_content11_article_content11_component__WEBPACK_IMPORTED_MODULE_17__["ArticleContent11Component"]
                     },
                     {
                         path: '',
@@ -344,6 +351,71 @@ var ArticleContent10Component = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], ArticleContent10Component);
     return ArticleContent10Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/article-content11/article-content11.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/article-content11/article-content11.component.css ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".app-btn-color {\r\n\tcolor: black;\r\n\ttext-decoration: none;\r\n}\r\n.app-btn-color:hover {\r\n\tcolor: black;\r\n\ttext-decoration: none;\r\n}"
+
+/***/ }),
+
+/***/ "./src/app/article-content11/article-content11.component.html":
+/*!********************************************************************!*\
+  !*** ./src/app/article-content11/article-content11.component.html ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<app-article [data]=\"articleEleven\"></app-article>\r\n<div class=\"article-content\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-lg-12\">\r\n\t\t\t\t<p><a href=\"https://www.opengl.org\" target=\"_blank\">OpenGL</a> is  a cross-language, cross-platform application \r\n\t\t\t\tprogramming interface (API) for rendering 2D and 3D vector graphics.</p>\r\n\t\t\t\t\r\n\t\t\t\t<p>This article explains clock implementation using OpenGL libraries.</p>\r\n\t\t\t\t\r\n\t\t\t\t<div>\t\t\t\t\t\r\n\t\t\t\t\t<pre class=\"article-code\"><code>\r\n\r\n\t#include&lt;stdlib.h&gt;\r\n\t#include&lt;gl\\glut.h&gt;\r\n\t#includegl\\GLU.h&gt;\r\n\t#include&lt;gl\\GL.h&gt;\r\n\t#include&lt;math.h&gt;\r\n\t#include&lt;stdio.h&gt;\r\n\t#include&lt;windows.h&gt;\r\n\t\r\n\tfloat mm = 0.0; // minutes angle\r\n\tfloat hh = 0.0; // hours angle\r\n\tfloat m5 = 0.0; // calculate 5mins\r\n\tfloat degree_6 = 2.0f * 3.1415926f / float(60); // value for degree 6 = 360/60\r\n\tfloat r = 0.9; //radius of the circle\r\n\t\r\n\tvoid DrawCircle(float cx, float cy, float r, int num_segments) {{ '{' }}\r\n\r\n\t    glBegin(GL_LINE_LOOP);\r\n\t    glColor3f(1.0,1.0,1.0);\r\n\t\r\n\t    for (int ii = 0; ii &lt; num_segments; ii++)   {{ '{' }}\r\n\t\r\n\t        float angle = 2.0f * 3.1415926f * float(ii) / float(num_segments);\r\n\t        float x = r * cosf(angle);\r\n\t        float y = r * sinf(angle);\r\n\t        glVertex2f(x + cx, y + cy);\r\n\t    {{ '}' }}\r\n\t    glEnd();\r\n\t{{ '}' }}\r\n\t\r\nvoid drawHourMarks(float cx, float cy, float r) {{ '{' }}\r\n\r\n\tglBegin(GL_LINES);\r\n\tglColor3f(0.0,0.0,1.0);\r\n\tfor (int ii = 0; ii &lt; 12; ii++)   {{ '{' }}\r\n\r\n\t\tfloat angle = degree_6 * float(ii) * 5 ;\r\n\t\tfloat x = 0.8 * cosf(angle);\r\n\t\tfloat y = 0.8 * sinf(angle);\r\n\t\tglVertex2d(cx + x, cy + y);\r\n\t\tx = r * cosf(angle);\r\n\t\ty = r * sinf(angle);\r\n\t\tglVertex2d(cx + x, cy + y);\r\n\t{{ '}' }}\r\n\r\n\tglEnd();\r\n{{ '}' }}\r\n\r\nvoid drawMinuteMarks(float cx, float cy) {{ '{' }}\r\n\r\n\tglBegin(GL_LINES);\r\n\tglColor3f(1.0,1.0,1.0);\r\n\r\n\tfor (int ii = 0; ii &lt; 60; ii++)   {{ '{' }}\r\n\r\n\t\tfloat angle = degree_6 * float(ii);\r\n\t\tfloat x = 0.85 * cosf(angle);\r\n\t\tfloat y = 0.85 * sinf(angle);\r\n\t\tglVertex2d(cx + x, cy + y);\r\n\t\tx = 0.9 * cosf(angle);\r\n\t\ty = 0.9 * sinf(angle);\r\n\t\tglVertex2d(cx + x, cy + y);\r\n\t{{ '}' }}\r\n\r\n\tglEnd();\r\n{{ '}' }}\r\n\r\nvoid drawHourHand(int ii) {{ '{' }}\r\n\r\n\tglBegin(GL_TRIANGLES);\r\n\tglColor3f(0,0,1); // Blue\r\n\r\n\tfloat angle = degree_6 * float(ii) * 5;\r\n\tfloat angle1 = angle;\r\n\tfloat x1 = 0.7 * cosf(angle1);\r\n\tfloat y1 = 0.7 * sinf(angle1);\r\n\tglVertex2f( x1, -y1 );\r\n\r\n\tfloat angle2 = angle + 90;\r\n\tfloat x2 = 0.03 * cosf(angle2);\r\n\tfloat y2 = 0.03 * sinf(angle2);\r\n\tglVertex2f( x2, -y2 );\r\n\r\n\tfloat angle3 = angle - 90;\r\n\tfloat x3 = 0.03 * cosf(angle3);\r\n\tfloat y3 = 0.03 * sinf(angle3);\r\n\tglVertex2f( x3, -y3 );\r\n\r\n\tglEnd();\r\n\r\n{{ '}' }}\r\n\r\nvoid drawMinuteHand(int ii) {{ '{' }}\r\n\r\n\tglBegin(GL_TRIANGLES);\r\n\tglColor3f(0,1,1); //Green\r\n\r\n\tfloat angle = degree_6 * float(ii);\r\n\tfloat angle1 = angle;\r\n\tfloat x1 = 0.8 * cosf(angle1);\r\n\tfloat y1 = 0.8 * sinf(angle1);\r\n\tglVertex2f( x1, -y1 );\r\n\r\n\tfloat angle2 = angle + 90;\r\n\tfloat x2 = 0.03 * cosf(angle2);\r\n\tfloat y2 = 0.03 * sinf(angle2);\r\n\tglVertex2f( x2, -y2 );\r\n\r\n\tfloat angle3 = angle - 90;\r\n\tfloat x3 = 0.03 * cosf(angle3);\r\n\tfloat y3 = 0.03 * sinf(angle3);\r\n\tglVertex2f( x3, -y3 );\r\n\r\n\tglEnd();\r\n\r\n{{ '}' }}\r\n\r\nvoid rotateLine(int value) {{ '{' }}\r\n\r\n\t// Minutes\r\n\tmm += 1;\r\n\tif(mm &gt; 60) {{ '{' }} // circle divide into 60 parts\r\n\t\tmm = 0.0;\r\n\t{{ '}' }}\r\n\r\n\t//Hours\r\n\tm5 += 1;\r\n\tif(m5 &gt; 300) {{ '{' }} // hour hand moves for every 5mins = 60 moves * 5 rounds = 300\r\n\t\thh += 1;\r\n\t\tm5 = 0.0;\r\n\t{{ '}' }}\r\n\tglutPostRedisplay();\r\n{{ '}' }}\r\n\r\n\r\n void display()\r\n{{ '{' }}\r\n    glClear(GL_COLOR_BUFFER_BIT);\r\n\r\n\t// clock\r\n\tDrawCircle(0, 0, r, 200);\r\n\tdrawMinuteMarks(0, 0);\r\n\tdrawHourMarks(0, 0, r);\r\n\r\n\t// hand moving\r\n\tdrawMinuteHand(mm); // Minutes hand\r\n\tdrawHourHand(hh); // Hours hand\r\n\r\n//\tglutTimerFunc(60000, rotateLine, 10); // calculate for every 1 minute as question\r\n\tglutTimerFunc(300, rotateLine, 10); // calculate for every 300 ms for testing\r\n\r\n    glutSwapBuffers();\r\n{{ '}' }}\r\n\r\n\r\n int main(int agrs, char **args) {{ '{' }}\r\n\r\n\tglutInit(&agrs, args);\r\n\tglutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);\r\n\tglutInitWindowSize(650, 650);\r\n    glutInitWindowPosition(0, 0);\r\n    glutCreateWindow(\"SC539 Assignment 07 CSC2027\");\r\n\tglClearColor(0, 0, 0, 0);\r\n\r\n\tglutDisplayFunc(display);\r\n\r\n\tglutMainLoop();\r\n\treturn 0;\r\n{{ '}' }}\r\n\t\r\n\r\n\r\n          \t\t </code></pre>\r\n\t\t\t\t\t<img src=\"/assets/img/articles/clock.gif\"  alt=\"OpenGL clock\" width=\"40%\" >\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n<app-send-email [articleTitle]=\"articleEleven.title\"></app-send-email>"
+
+/***/ }),
+
+/***/ "./src/app/article-content11/article-content11.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/article-content11/article-content11.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ArticleContent11Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ArticleContent11Component", function() { return ArticleContent11Component; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleContent11Component = /** @class */ (function () {
+    function ArticleContent11Component() {
+    }
+    ArticleContent11Component.prototype.ngOnInit = function () {
+        this.articleEleven = { 'title': 'OpenGL clock',
+            'lastUpdated': 'June 22 2021' };
+    };
+    ArticleContent11Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-article-content11',
+            template: __webpack_require__(/*! ./article-content11.component.html */ "./src/app/article-content11/article-content11.component.html"),
+            styles: [__webpack_require__(/*! ./article-content11.component.css */ "./src/app/article-content11/article-content11.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ArticleContent11Component);
+    return ArticleContent11Component;
 }());
 
 
@@ -957,7 +1029,7 @@ module.exports = ".card-home {\r\n\tbackground-color:#f3f3f3;\t\r\n}\r\n.card-ho
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\lamp.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\java.png\" alt=\"Java logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/design_patterns_java\" > Java Design Patterns.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\uml.png\" alt=\"UML logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/uml\" > UML 2.5.1</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\codeigniter.jpg\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/codeigniter_and_php_session\" > CodeIgniter Session Library.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\tcpdf.png\" alt=\"TCPDF logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/pdf_library_for_codeigniter\" >PDF library for CodeIgniter.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\python.PNG\" alt=\"Python logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/color_conversion_in_python\" >RGB, CMY, HSI color conversion in python.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"article-content\">\r\n  <div class=\"container\">\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\jersy.png\" alt=\"Jersy logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/jersey_example\" > Jersey REST Hello World Example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\spring.png\" alt=\"Spring logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/spring_mvc_boot\" > Spring MVC & Spring Boot.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\docker.png\" alt=\"Docker logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/introduction_to_docker\" > Containerization and Docker. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\lamp.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/lamp_and_codeigniter\"> LAMP and CodeIgniter. </a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\php.png\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/php_login_example\" > PHP login example.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\java.png\" alt=\"Java logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/design_patterns_java\" > Java Design Patterns.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\uml.png\" alt=\"UML logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/uml\" > UML 2.5.1</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\codeigniter.jpg\" alt=\"PHP logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/codeigniter_and_php_session\" > CodeIgniter Session Library.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n      <div class=\"row\">\r\n        <div class=\"col-lg-10 offset-lg-1\">\r\n        \t<div class=\"card-deck\">\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\tcpdf.png\" alt=\"TCPDF logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/pdf_library_for_codeigniter\" >PDF library for CodeIgniter.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\python.PNG\" alt=\"Python logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/color_conversion_in_python\" >RGB, CMY, HSI color conversion in python.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    <img class=\"card-img-top\" src=\"\\assets\\img\\articles\\opengl.png\" alt=\"OpenGL logo\">\r\n\t\t\t    <div class=\"card-body card-home\">\r\n\t\t\t      <p class=\"card-text card-font-home\"><a routerLink = \"/opengl_clock\" >OpenGL clock.</a></p>\r\n\t\t\t    </div>\r\n\t\t\t  </div>\r\n\t\t\t  <div class=\"card shadow p-3 mb-5 bg-white rounded col-lg-3\">\r\n\t\t\t    \r\n\t\t\t  </div>\t\t  \t\t  \t\t  \r\n\t\t\t</div>\t\t\t\r\n        </div>\r\n      </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
