@@ -7,14 +7,13 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
+
   <!-- Bootstrap core CSS -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/font-awesome/css/all.min.css" rel="stylesheet" >
-    
+
 </head>
 <body>
-  
   <app-root></app-root>
    <!-- Bootstrap core JavaScript -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
@@ -26,7 +25,7 @@
     <!-- Git hub buttons -->
 	<!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
 	<!-- Chart lib -->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script>
 	</script>
 	<script type="text/javascript">
@@ -71,7 +70,7 @@
     var chart = new google.charts.Line(document.getElementById('duty_cycle_chart01'));
 
     chart.draw(data, google.charts.Line.convertOptions(options));
-    
+
     //duty_cycle_chart02
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'time');
@@ -115,7 +114,7 @@
     data.addColumn('number', 'average value');
 
     data.addRows([
-      [0,  8, 6],	
+      [0,  8, 6],
       [3,  8, 6],
       [3,  0, 6],
       [4,  0, 6],
@@ -164,7 +163,7 @@
     var chart = new google.charts.Line(document.getElementById('duty_cycle_chart04'));
 
     chart.draw(data, google.charts.Line.convertOptions(options));
-    
+
   //chart05
     var data = new google.visualization.DataTable();
     data.addColumn('number', 'time');
@@ -229,7 +228,7 @@
 
     chart.draw(data, google.charts.Line.convertOptions(options));
   }
- </script> 
-	
+ </script>
+
 <script type="text/javascript" src="runtime.js"></script><script type="text/javascript" src="polyfills.js"></script><script type="text/javascript" src="styles.js"></script><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="main.js"></script></body>
 </html>
