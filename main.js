@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".main-content {\r\n\tpadding-top: 50px;\r\n\tpadding-left: 100px;\r\n\theight: auto;\r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}\r\n.list-group a{\r\n\tcolor: white;\r\n}\r\n.list-group a:hover {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.list-group a:active {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.icon-bar a{\r\n\tcolor: #5d5959;\r\n\tdisplay: block;\r\n  \ttext-align: center;\r\n  \tpadding-top:10px;\r\n}\r\n.icon-bar {\r\n\tpadding-top: 50px;\r\n\tpadding-right: 50px;\r\n}\r\n.social-buttons button, .github-button  {\r\n\tborder-color: black;\r\n\tbackground-color: #156584;\r\n\ttext-decoration: none;\r\n}\r\n"
+module.exports = ".main-content {\r\n\tpadding-top: 50px;\r\n\tpadding-left: 50px;\r\n\theight: auto;\r\n}\r\n.card-profile-img {\r\n\tmax-width: 100px;\r\n    margin-top: -70px;\r\n    margin-bottom: 5px;\r\n    border: 3px solid #fff;\r\n    border-radius: 100%;\r\n    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\r\n}\r\n.text-xs-center {\r\n\ttext-align:center;\r\n}\r\n.card-profile {\r\n\tbackground-color:#156584;\r\n\tcolor: white;\r\n}\r\n.card-header {\r\n\tbackground-color:#104e65;\r\n\theight: 100px;\r\n}\r\n.profile-info{\r\n\tpadding-top: 150px;\r\n    padding-bottom: 100px;\r\n}\r\n.list-group a{\r\n\tcolor: white;\r\n}\r\n.list-group a:hover {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.list-group a:active {\r\n    text-decoration: none;\r\n    color: #104e65;\r\n}\r\n.icon-bar a{\r\n\tcolor: #5d5959;\r\n\tdisplay: block;\r\n  \ttext-align: center;\r\n  \tpadding-top:10px;\r\n}\r\n.icon-bar {\r\n\tpadding-top: 50px;\r\n\tpadding-right: 50px;\r\n}\r\n.social-buttons button, .github-button  {\r\n\tborder-color: black;\r\n\tbackground-color: #156584;\r\n\ttext-decoration: none;\r\n}\r\n"
 
 /***/ }),
 
@@ -116,12 +116,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _article_content11_article_content11_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./article-content11/article-content11.component */ "./src/app/article-content11/article-content11.component.ts");
 /* harmony import */ var _article_content12_article_content12_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./article-content12/article-content12.component */ "./src/app/article-content12/article-content12.component.ts");
 /* harmony import */ var _article_content13_article_content13_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./article-content13/article-content13.component */ "./src/app/article-content13/article-content13.component.ts");
+/* harmony import */ var _six_yards_six_yards_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./six-yards/six-yards.component */ "./src/app/six-yards/six-yards.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -164,7 +166,8 @@ var AppModule = /** @class */ (function () {
                 _article_content10_article_content10_component__WEBPACK_IMPORTED_MODULE_16__["ArticleContent10Component"],
                 _article_content11_article_content11_component__WEBPACK_IMPORTED_MODULE_17__["ArticleContent11Component"],
                 _article_content12_article_content12_component__WEBPACK_IMPORTED_MODULE_18__["ArticleContent12Component"],
-                _article_content13_article_content13_component__WEBPACK_IMPORTED_MODULE_19__["ArticleContent13Component"]
+                _article_content13_article_content13_component__WEBPACK_IMPORTED_MODULE_19__["ArticleContent13Component"],
+                _six_yards_six_yards_component__WEBPACK_IMPORTED_MODULE_20__["SixYardsComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -219,6 +222,10 @@ var AppModule = /** @class */ (function () {
                     {
                         path: 'online_class',
                         component: _article_content13_article_content13_component__WEBPACK_IMPORTED_MODULE_19__["ArticleContent13Component"]
+                    },
+                    {
+                        path: '6yards',
+                        component: _six_yards_six_yards_component__WEBPACK_IMPORTED_MODULE_20__["SixYardsComponent"]
                     },
                     {
                         path: '',
@@ -1285,6 +1292,69 @@ var SendEmailComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], SendEmailComponent);
     return SendEmailComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/six-yards/six-yards.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/six-yards/six-yards.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\r\n// custom css specific for 6yards page only\r\nbody,h1,h2,h3,h4,h5 {font-family: \"Handlee\", sans-serif}\r\n.w3-quarter img{margin-bottom: -6px; cursor: pointer}\r\n.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}\r\n.post-container {\r\nposition: relative;\r\npadding-bottom: 35%;\r\npadding-top: 35px;\r\nheight: 0;\r\noverflow: hidden;\r\n}\r\n.fb-post {\r\nposition: absolute;\r\ntop:0;\r\nleft: 0;\r\nwidth: 100%;\r\nheight: 100%;\r\n}\r\n"
+
+/***/ }),
+
+/***/ "./src/app/six-yards/six-yards.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/six-yards/six-yards.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-lg-12\">\r\n\r\n<!-- Sidebar/menu -->\r\n<nav class=\"w3-sidebar w3-bar-block w3-animate-right w3-top w3-large\" style=\"z-index:20;width:250px;font-weight:bold;display:none;right:0;background-color:rgb(164, 93, 131);\" id=\"mySidebar\">\r\n  <a href=\"javascript:void()\" onclick=\"w3_close()\" class=\"w3-bar-item w3-button w3-center w3-padding-32\">×</a>\r\n  <a href=\"6yards/#sarees\" onclick=\"w3_close()\" class=\"w3-bar-item w3-button w3-center w3-padding-16\" style=\"color:#fff\">Sarees</a>\r\n  <a href=\"6yards/#reviews\" onclick=\"w3_close()\" class=\"w3-bar-item w3-button w3-center w3-padding-16\" style=\"color:#fff\">Reviews</a>\r\n  <a href=\"6yards/#about\" onclick=\"w3_close()\" class=\"w3-bar-item w3-button w3-center w3-padding-16\" style=\"color:#fff\">About Me</a>\r\n</nav>\r\n\r\n<!-- Top menu on small screens -->\r\n\r\n<header class=\"w3-container w3-pale-red w3-padding-16 w3-padding-large\" style=\"z-index:10;top:0;position:fixed;width:77%;box-sizing: content-box;\">\r\n  <span class=\"w3-left w3-padding\" ><b>6Yards by Piyumi</b></span>\r\n  <a href=\"javascript:void(0)\" class=\"w3-right w3-button\" onclick=\"w3_open()\">☰</a>\r\n</header>\r\n\r\n<!-- Overlay effect when opening sidebar on small screens -->\r\n<div class=\"w3-overlay w3-animate-opacity\" onclick=\"w3_close()\" style=\"cursor:pointer\" title=\"close side menu\" id=\"myOverlay\"></div>\r\n\r\n<!-- !PAGE CONTENT! -->\r\n<div class=\"w3-main w3-content\" style=\"max-width:1600px;\">\r\n\r\n  <!-- Photo grid -->\r\n  <div class=\"w3-row\" id=\"sarees2\">\r\n  </div>\r\n\r\n  <!-- Pagination -->\r\n  <div class=\"w3-center w3-padding-32 w3-pale-red\">\r\n    <div class=\"w3-bar\">\r\n      <table id=\"csv-data\"></table>\r\n      <a href=\"#\" class=\"w3-bar-item w3-button w3-hover-black\">«</a>\r\n      <a href=\"#\" class=\"w3-bar-item w3-black w3-button\">1</a>\r\n      <a href=\"#\" class=\"w3-bar-item w3-button w3-hover-black\">2</a>\r\n      <a href=\"#\" class=\"w3-bar-item w3-button w3-hover-black\">3</a>\r\n      <a href=\"#\" class=\"w3-bar-item w3-button w3-hover-black\">4</a>\r\n      <a href=\"#\" class=\"w3-bar-item w3-button w3-hover-black\">»</a>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- Modal for full size images on click-->\r\n  <div id=\"modal01\" class=\"w3-modal w3-black\" style=\"padding-top:0\" onclick=\"this.style.display='none'\">\r\n    <span class=\"w3-button w3-black w3-xlarge w3-display-topright\">×</span>\r\n    <div class=\"w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64\">\r\n      <img id=\"img01\" class=\"w3-image\">\r\n      <p id=\"caption\"></p>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- About section -->\r\n  <div class=\"w3-container w3-black w3-center w3-padding-32\" id=\"about\" style=\"color:rgb(248, 190, 221);\" >\r\n    <div class=\"w3-third\">\r\n      <img src=\"me.jpg\" alt=\"Me\" class=\"w3-image w3-padding-32\" width=\"100\" height=\"00\">\r\n    </div>\r\n    <div class=\"w3-third\">\r\n      <div class=\"w3-content w3-center\" style=\"max-width:600px;color:rgb(248, 190, 221);\">\r\n        <h4><b>Work with Me</b></h4>\r\n        <h4>I'm Piyumi Kaushalya</h4>\r\n        <p>She is everything and loves painting and coding.. </p>\r\n      </div>\r\n    </div>\r\n    <div class=\"w3-third\">\r\n      <div class=\"w3-content w3-center\" style=\"max-width:600px;color:rgb(248, 190, 221);\">\r\n        <p><i class=\"far fa-envelope\"></i> piyumik11@gmail.com</p>\r\n        <p data-placement=\"left\" data-toggle=\"tooltip\" title=\"whatsapp\"><i class=\"fab fa-whatsapp\" aria-hidden=\"true\"></i> +94713067088</p>\r\n\r\n        <p><a data-placement=\"left\" data-toggle=\"tooltip\" href=\"https://piyumi11.github.io\" target=\"_blank\" title=\"github\"><i class=\"fab fa-github\" aria-hidden=\"true\"></i></a></p>\r\n        <p><a data-placement=\"left\" data-toggle=\"tooltip\" href=\"https://www.facebook.com/piyumi.k.rajapaksha\" target=\"_blank\" title=\"facebook\"><i class=\"fab fa-facebook\" aria-hidden=\"true\"></i></a></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <!-- Client Reviews -->\r\n  <div class=\"w3-center w3-padding-16 w3-pale-red\">\r\n    <div class=\"w3-bar\">\r\n      <div class=\"w3-content w3-center\" style=\"max-width:600px;\">\r\n        <h4>My happy clients ..</h4>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\" style=\"margin:0px;\" id=\"reviews\">\r\n\r\n      <div class=\"col-md-3 post-container\">\r\n        <iframe class=\"fb-post\" src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0cNBUUuYeHrbxTKxHWk6fFhNhwWYFSL25iypub8SLVG6jgTUHQqvGeESKMJ1JC2aAl%26id%3D100072731565482&show_text=true\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\r\n      </div>\r\n      <div class=\"col-md-3 post-container\" >\r\n        <iframe class=\"fb-post\" src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpiyumime%2Fposts%2Fpfbid02jSvHjvCrTc1BDzvWQPD9wERVewJL7uSsy5Xbcgqdf9pdvF69H8z2TMZbULFa7yxVl&show_text=true\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\r\n      </div>\r\n      <div class=\"col-md-3 post-container\" >\r\n        <iframe class=\"fb-post\" src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0cNBUUuYeHrbxTKxHWk6fFhNhwWYFSL25iypub8SLVG6jgTUHQqvGeESKMJ1JC2aAl%26id%3D100072731565482&show_text=true\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\r\n      </div>\r\n    <div class=\"col-md-3 post-container\" >\r\n      <iframe class=\"fb-post\" src=\"https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpiyumime%2Fposts%2Fpfbid02jSvHjvCrTc1BDzvWQPD9wERVewJL7uSsy5Xbcgqdf9pdvF69H8z2TMZbULFa7yxVl&show_text=true\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>\r\n    </div>\r\n  </div>\r\n\r\n  <!-- Footer -->\r\n  <footer class=\"w3-container w3-padding-32 w3-pale-red\">\r\n    <div class=\"w3-row-padding\">\r\n      <div class=\"w3-half\">\r\n        <p>My small business of creative items..</p>\r\n      </div>\r\n\r\n      <div class=\"w3-half\">\r\n        <p>\r\n          <span class=\"w3-tag w3-small w3-margin-bottom\" style=\"background-color:rgb(248, 190, 221);color:black;\">Creative</span>\r\n          <span class=\"w3-tag w3-small w3-margin-bottom\" style=\"background-color:rgb(248, 190, 221);color:black;\">Hand made</span>\r\n          <span class=\"w3-tag w3-small w3-margin-bottom\" style=\"background-color:rgb(248, 190, 221);color:black;\">Hand painted</span>\r\n          <span class=\"w3-tag w3-small w3-margin-bottom\" style=\"background-color:rgb(248, 190, 221);color:black;\">Sarees</span>\r\n          <span class=\"w3-tag w3-small w3-margin-bottom\" style=\"background-color:rgb(248, 190, 221);color:black;\">6Yards</span>\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </footer>\r\n\r\n  <!-- End page content -->\r\n</div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/six-yards/six-yards.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/six-yards/six-yards.component.ts ***!
+  \**************************************************/
+/*! exports provided: SixYardsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SixYardsComponent", function() { return SixYardsComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SixYardsComponent = /** @class */ (function () {
+    function SixYardsComponent() {
+    }
+    SixYardsComponent.prototype.ngOnInit = function () {
+    };
+    SixYardsComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-six-yards',
+            template: __webpack_require__(/*! ./six-yards.component.html */ "./src/app/six-yards/six-yards.component.html"),
+            styles: [__webpack_require__(/*! ./six-yards.component.css */ "./src/app/six-yards/six-yards.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SixYardsComponent);
+    return SixYardsComponent;
 }());
 
 
