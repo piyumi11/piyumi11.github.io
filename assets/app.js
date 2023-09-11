@@ -1,4 +1,8 @@
-// Script to open and close sidebar
+/*
+js function customized for this application
+*/
+
+    // Script to open and close sidebar
     function w3_open() {
       document.getElementById("mySidebar").style.display = "block";
       document.getElementById("myOverlay").style.display = "block";
@@ -20,12 +24,12 @@
 js function customized for this application
 */
 
-$(document).ready(function(){
+$(document).ready(function() {
 
     // updates the sarees : start of d script
 
-    let table = document.getElementById("sarees2");
-    let url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRo788CEpKKXE60ew_HijFIC3VNPHheRk_18OOSuT2uIItS4l5c4c26lmvLu4gEMAv26jr2KdoUtVIM/pub?gid=2060668346&single=true&output=csv";
+    let table = document.getElementById("sarees");
+    let url = "assets/img/sarees/data.csv";
 
     fetch(url)
       .then(response => response.text())
@@ -35,33 +39,34 @@ $(document).ready(function(){
 
             let cells = rows[i].split(",");
 
-            var colDiv = document.createElement('div');
-            colDiv.className = 'w3-quarter';
+            if(cells[0]!=="") {
 
-            var iDiv = document.createElement('div');
-            iDiv.className = 'w3-display-container';
+            var colDiv = document.createElement('div');
+            colDiv.className = 'col-md-3 six-display-container';
 
             var img = document.createElement("img");
-            img.src = cells[1];
+            img.src = "assets/img/sarees/"+(i+1)+".jpg";
             img.style = "width:100%;height:20em;object-fit: cover;";
-            img.onclick = "openImg(this);";
+            img.setAttribute('onClick','openImg(this)');
             img.alt = cells[0];
 
             var imgText = document.createElement('div');
-            imgText.className = 'w3-display-bottomright w3-container';
+            imgText.className = 'six-display-bottomright';
             imgText.innerHTML = cells[0];
 
-            iDiv.appendChild(img);
-            iDiv.appendChild(imgText);
-            colDiv.appendChild(iDiv);
+            colDiv.appendChild(img);
+            colDiv.appendChild(imgText);
             table.appendChild(colDiv);
+            }
         }
       })
       .catch(error => console.log(error));
     // updates the sarees : end of d script
 
+    });
 
 
+$(document).ready(function(){
 
   //google charts
     google.charts.load('current', {'packages':['line']});
