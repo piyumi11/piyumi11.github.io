@@ -2,14 +2,6 @@
 js function customized for this application
 */
 
-//open/zoom out the saree/product img
-function openImg(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-}
-
 $(document).ready(function(){
 
   //google charts
