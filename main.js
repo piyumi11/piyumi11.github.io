@@ -106,7 +106,7 @@ module.exports = ".main-content {\r\n\tpadding-top: 30px;\r\n\tmargin: auto;\r\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n<div class=\"container-fluid\">\r\n\r\n  <div class=\"container\">\r\n      <div class=\"icon-bar\">\r\n        <a routerLink=\"home\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Home Page\">\r\n          <img src=\"favicon.ico\" alt=\"home\" data-toggle=\"tooltip\" title=\"home\">\r\n        </a>\r\n\r\n        <a href=\"https://github.com/piyumi11\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"github\">\r\n          <i class=\"fab fa-github-alt\"></i>\r\n        </a>\r\n\r\n        <a href=\"https://stackoverflow.com/users/10041029/piyumi\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"stackoverflow\">\r\n          <i class=\"fab fa-stack-overflow\"></i></a>\r\n\r\n        <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"instagram\">\r\n          <i class=\"fab fa-instagram\"></i></a>\r\n\r\n        <a routerLink = \"/about_me\" data-toggle=\"tooltip\" target=\"_blank\" data-placement=\"left\" title=\"about me\">\r\n          <i class=\"fas fa-user\"></i></a>\r\n      </div>\r\n  </div>\r\n\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-12 col-sm-12 main-content\">\r\n\t\t\t<router-outlet></router-outlet>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</div>\r\n"
+module.exports = "\r\n<div class=\"container-fluid\">\r\n\r\n  <div class=\"container\">\r\n      <div class=\"icon-bar\">\r\n        <a routerLink=\"home\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Home Page\">\r\n          <img src=\"favicon.ico\" alt=\"home\" data-toggle=\"tooltip\" title=\"home\">\r\n        </a>\r\n\r\n        <a href=\"https://github.com/piyumi11\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"github\">\r\n          <i class=\"fab fa-github-alt\"></i>\r\n        </a>\r\n\r\n        <a href=\"https://stackoverflow.com/users/10041029/piyumi\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"stackoverflow\">\r\n          <i class=\"fab fa-stack-overflow\"></i></a>\r\n\r\n        <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"instagram\">\r\n          <i class=\"fab fa-instagram\"></i></a>\r\n\r\n        <a routerLink = \"about_me\" data-toggle=\"tooltip\" target=\"_blank\" data-placement=\"left\" title=\"about me\">\r\n          <i class=\"fas fa-user\"></i></a>\r\n      </div>\r\n  </div>\r\n\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col-md-12 col-sm-12 main-content\">\r\n\t\t\t<router-outlet></router-outlet>\r\n\t\t</div>\r\n\t</div>\r\n\r\n</div>\r\n"
 
 /***/ }),
 
@@ -283,10 +283,6 @@ var AppModule = /** @class */ (function () {
                     }, {
                         path: 'atmega328p_fast_pwm',
                         component: _article_content12_article_content12_component__WEBPACK_IMPORTED_MODULE_18__["ArticleContent12Component"]
-                    },
-                    {
-                        path: 'online_class',
-                        component: _article_content13_article_content13_component__WEBPACK_IMPORTED_MODULE_19__["ArticleContent13Component"]
                     },
                     {
                         path: 'about_me',
