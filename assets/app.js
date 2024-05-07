@@ -2,7 +2,34 @@
 js function customized for this application
 */
 
+  ////// rotate 3d start
+    var x,y,n=0,ny=0,rotINT,rotYINT;
+
+    function rotateYDIV(ele)
+    {
+      //y=document.getElementById("rotate3D")
+      y=ele
+      clearInterval(rotYINT)
+      rotYINT=setInterval("startYRotate()",10)
+    }
+
+    function startYRotate()
+    {
+      ny=ny+1
+      y.style.transform="rotateY(" + ny + "deg)"
+      y.style.webkitTransform="rotateY(" + ny + "deg)"
+      y.style.OTransform="rotateY(" + ny + "deg)"
+      y.style.MozTransform="rotateY(" + ny + "deg)"
+      if (ny>=360)
+      {
+        clearInterval(rotYINT)
+        if (ny>=360){ny=0}
+      }
+    }
+    ////// rotate 3 end
+
 $(document).ready(function(){
+
 
   //google charts
     google.charts.load('current', {'packages':['line']});
